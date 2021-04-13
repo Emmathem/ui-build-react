@@ -1,1 +1,1 @@
-/*# sourceMappingURL=main.css.map */
+*{box-sizing:border-box}html,body{margin:0;padding:0;height:100%;width:100%;font-size:100%}.header{display:flex;position:absolute;align-items:center;justify-content:flex-end;width:100%;padding:10px 0;z-index:1}.header__logo{padding:5px;margin-right:40px}.header__logo img{object-fit:contain}.landing{display:flex;height:100vh;width:100%}.landing__bgCover{background:url("../images/tender-young-blonde.jpg") no-repeat center;height:100%;width:100%;background-size:cover;overflow:hidden}/*# sourceMappingURL=main.css.map */
