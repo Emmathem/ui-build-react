@@ -14,7 +14,7 @@ const App = () => {
     <div className="landing">
       <Router>
         <AppHeader />
-        <div className="landing__bgCover">
+        <div className="wow animated fadeIn landing__bgCover">
           <Switch>
             <Route exact path="/" component={AppWelcome} />
             <Route path="/register" component={AppRegister} />

@@ -46,6 +46,13 @@ body {
 }
 .btnColor {
     color: $primaryButton;
+    a {
+        text-decoration: underline;
+        &:hover {
+            text-decoration: underline;
+            color: $primaryButton;
+        }
+    }
 }
 .text-center {
     text-align: center;

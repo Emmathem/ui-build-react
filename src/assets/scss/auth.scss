@@ -15,6 +15,7 @@
     transition: ease all 0.55s;
     // animation: fadeInLeft 1s linear 1s;
     background-color: rgba(0, 0, 0, 0.42);
+    font-family: 'Roboto-Regular', sans-serif;
 
     &__header {
         transition: ease all 0.55s;
@@ -36,6 +37,13 @@
         border-radius: 5px;
         box-shadow: 0px 1px 4px #E5E9F2;
         padding: 15px;
+        &__formField {
+            margin-right: 20.23%;
+            padding: 5px;
+        }
+    }
+    &__formLogin {
+        background-color: transparent;
         &__formField {
             margin-right: 20.23%;
             padding: 5px;
@@ -83,5 +91,32 @@
     .ant-divider {
         margin: 3px 0 !important;
         font-size: 12px !important;
+    }
+}
+
+.login {
+    // margin-top: 10px;
+    padding: 20px;
+    .ant-divider {
+        margin: 18px 0 !important;
+        color: $white-color !important;
+        border-top: $white-color !important;
+    }
+    label {
+        color: $white-color;
+    }
+    h2 {
+        padding-left: 20px;
+    }
+    &__info {
+        color: $white-color;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    &__info2 {
+        color: $white-color;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 20px;
     }
 }

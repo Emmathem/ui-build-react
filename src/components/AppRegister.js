@@ -21,8 +21,8 @@ const AppRegister = () => {
         <title>Register | Desperate Escort</title>
       </Helmet>
       <div
-        className="animated wow fadeInLeft register"
-        data-wow-delay="1.5s"
+        className="animated wow fadeIn register"
+        data-wow-delay="1.6s"
         data-wow-duration="1.1s"
       >
         <div className="hideOnMobile">
@@ -110,9 +110,12 @@ const AppRegister = () => {
                   </button>
                 </Col>
               </Row>
-              <p className="register__existing">
-                Already Have an Account? <Link to="/login">Sign in</Link>
-              </p>
+              <div className="register__existing">
+                Already Have an Account?{" "}
+                <Link to="/login" className="btnColor">
+                  Sign in
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -196,7 +199,8 @@ const AppRegister = () => {
               </Row>
               <p className="register__existing">
                 <span className="white-color">Already Have an Account?</span>
-                &nbsp;<Link to="/login" className="btnColor">
+                &nbsp;
+                <Link to="/login" className="btnColor">
                   Sign in
                 </Link>
               </p>
