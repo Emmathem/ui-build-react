@@ -1,5 +1,12 @@
-//mobile style
+//mobile style f
+@import "./_partials/vars";
+@import "./_partials/mixins";
+
 @media(max-width: 768px) {
+    .header {
+        justify-content: center;
+        padding: 4em 0;
+    }
     .landing {
         &__bgCover {
             background: url("../images/tender-young-blonde.jpg") no-repeat;
@@ -43,11 +50,87 @@
         }
     }
     .register {
-        width: 95%;
-        padding: 25px;
+        max-width: 100%;
+        padding: 3em 25px;
+        height: 100vh;
         margin: 0 auto;
         position: absolute;
-        top: 1rem;
+        top: 0;
+        left: 0;
+        right: 0;
         background-color: rgba(0, 0, 0, 0.42);
+        &__mobile {
+            // border: 1px solid yellow;
+            margin-top: 6em;
+            transition: ease all 0.54s;
+            h3 {
+                color: $white-color;
+                font-family: 'Roboto-Bold';
+                display: flex;
+                justify-content: center;
+                font-size: 2em;
+            }
+        }
+        &__mp {
+            margin-top: 15px;
+            margin-left: 15px;
+            // display: flex;
+            // justify-content: space-around;
+        }
+        &__mobileFormContent {
+            margin: 30px 0 10px 0;
+        }
+        .ant-input-affix-wrapper {
+            background-color: rgba(0,0,0,.58);
+            border-radius: 5px;
+            color: #fff;
+            padding: 10px;
+            border: none;
+        }
+        .ant-input {
+            background-color: transparent;
+            border-radius: 5px;
+            height: 30px;
+            padding: 4px 10px;;
+            border: none;
+            color: $white-color;
+            &:focus {
+                border: none;
+                border-bottom: 1px solid $white-color;
+            }
+        }
+        .ant-input-prefix{
+            background-color: transparent;
+            border-right: 1px solid $white-color;
+            color: $white-color;
+            padding: 3px 14px;
+        }
+        .ant-input-suffix {
+            color: $white-color;
+        }
+        .ant-btn-primary {
+            background: $primaryButton;
+            border-color: $primaryButton;
+            height: 40px;
+        }
+        &__formgroup {
+            margin-bottom: 15px;
+        }
+        &__twitter {
+            @include SocialButton($white-color, $twitter, 40px, 40px, 100%);
+        }
+        &__facebook {
+            @include SocialButton($white-color, $facebook, 40px, 40px, 100%);
+        }
+        &__googleplus {
+            @include SocialButton($white-color, $google, 40px, 40px, 100%);
+        }
+        .ant-divider {
+            color: $white-color !important;
+            border-top: $white-color !important;
+        }
+    }
+    .hideOnMobile {
+        display: none;
     }
 }

@@ -1,7 +1,7 @@
+@import "./_partials/vars";
 @import "./_partials/mixins";
 
-//var
-$text-color: #748AA1;
+
 * {
     box-sizing: border-box;
 }
@@ -24,6 +24,7 @@ body {
     width: 100%;
     padding: 10px 0;
     z-index: 1;
+    transition: ease all 0.5s;
 
     a {
         text-decoration: none;
@@ -39,13 +40,26 @@ body {
         }
     }
 }
+
 .text-color {
     color: $text-color;
 }
+.btnColor {
+    color: $primaryButton;
+}
+.text-center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.white-color {
+    color: $white-color;
+}
 .wow {
     visibility: hidden;
-    overflow: hidden;
+    // overflow: hidden;
 }
+
 .landing {
     display: flex;
     height: 100vh;
@@ -73,7 +87,7 @@ body {
         top: 9rem;
         left: 5rem;
         transition: ease all 0.55s;
-        animation: fadeInLeft 1s linear 1s;
+        // animation: fadeInLeft 1s linear 1s;
     }
 
     &__content {
@@ -81,13 +95,13 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        color: #fff;
         margin-bottom: 20px;
 
         h3 {
             font-size: 1.4rem;
             margin: 0 0px 20px 0px;
             padding: 0;
+            color: $white-color;
         }
 
         h4 {
@@ -95,7 +109,7 @@ body {
             margin: 0;
             text-transform: uppercase;
             font-family: 'Gotham-Bold', sans-serif;
-            // color: #000;
+            color: $white-color;
         }
     }
 
@@ -123,6 +137,12 @@ body {
             transition: ease all 0.5s;
             font-family: 'Gotham-Bold', sans-serif;
         }
+    }
+}
+
+@media (min-width: 1024px) {
+    .hideOnWeb {
+        display: none;
     }
 }
 

@@ -13,7 +13,11 @@ const AppWelcome = () => {
       <Helmet>
         <title>Welcome | Meet A Desperate Escort</title>
       </Helmet>
-      <div className="landing__welcome">
+      <div
+        className="wow animated fadeInLeft  landing__welcome"
+        data-wow-delay="2s"
+        data-wow-duration="2s"
+      >
         <div className="landing__content">
           <h3>Want to Meet A</h3>
           <h4>Desperate Escort?</h4>
@@ -21,7 +25,9 @@ const AppWelcome = () => {
         <button
           type="button"
           onClick={gotoNext}
-          className="landing__getStartedBtn"
+          className="wow animated fadeInUp landing__getStartedBtn"
+          data-wow-delay="3.5s"
+          data-wow-duration="2s"
         >
           Get Started
         </button>

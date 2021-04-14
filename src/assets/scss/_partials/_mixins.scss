@@ -8,12 +8,12 @@
     }
 }
 
-@mixin Roboto ($font-family, $font-file, $weight, $style){
+@mixin Roboto ($font-family, $font-file, $weight){
     @font-face {
         font-family: $font-family;
         src: url($font-file+'.ttf') format('truetype');
         font-weight: $weight;
-        font-style: $style;
+        font-style: normal;
     }
 }
 
@@ -26,23 +26,39 @@
 @include Gotham('Gotham-Medium', '../fonts/Gotham-Font/Gotham-XLight', normal);
 
 //Include Roboto Fonts
-@include Roboto('Roboto-Regular', '../fonts/Roboto/Roboto-Regular', 100, normal);
-@include Roboto('Roboto-Light', '../fonts/Roboto/Roboto-Light', 100, normal);
-@include Roboto('Roboto-Thin', '../fonts/Roboto/Roboto-Thin', 'lighter', normal);
+@include Roboto('Roboto-Bold', '../fonts/Roboto/Roboto-Bold', 700);
+@include Roboto('Roboto-Regular', '../fonts/Roboto/Roboto-Regular', 100);
+@include Roboto('Roboto-Light', '../fonts/Roboto/Roboto-Light', 100);
+@include Roboto('Roboto-Thin', '../fonts/Roboto/Roboto-Thin', 'lighter');
 
 //Social Button
 
-@mixin SocialButton($textColor, $bgColor) {
+@mixin SocialButton($textColor, $bgColor, $width, $height, $radius) {
     background: $bgColor;
     color: $textColor;
-    border-radius: 4px;
+    border-radius: $radius;
     display: flex;
     align-items: center;
-    height: 25px;
-    width: 100%;
+    height: $height;
+    width: $width;
     outline: 0;
     font-size: 9px;
     border: none;
     line-height: 11px;
     justify-content: space-evenly;
 }
+
+// @mixin mobileSocialButton($textColor, $bgColor) {
+//     background: $bgColor;
+//     color: $textColor;
+//     border-radius: 100%;
+//     display: flex;
+//     align-items: center;
+//     height: 30px;
+//     width: 30px;
+//     outline: 0;
+//     font-size: 9px;
+//     border: none;
+//     line-height: 11px;
+//     justify-content: space-evenly;
+// }

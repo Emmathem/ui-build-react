@@ -1,10 +1,5 @@
 // Register Style
 // @import "./_partials/mixins";
-$text-color: #748AA1;
-$white-color: rgb(255, 255, 255);
-$twitter: #00ADEE;
-$google: #DD4B39;
-$facebook: #3B5998;
 
 .register {
     display: flex;
@@ -18,7 +13,7 @@ $facebook: #3B5998;
     left: 5rem;
     border-radius: 5px;
     transition: ease all 0.55s;
-    animation: fadeInLeft 1s linear 1s;
+    // animation: fadeInLeft 1s linear 1s;
     background-color: rgba(0, 0, 0, 0.42);
 
     &__header {
@@ -55,13 +50,24 @@ $facebook: #3B5998;
         }
     }
     &__twitter {
-        @include SocialButton($white-color, $twitter);
+        @include SocialButton($white-color, $twitter, 25px, 100%, 4px);
     }
     &__facebook {
-        @include SocialButton($white-color, $facebook);
+        @include SocialButton($white-color, $facebook, 25px, 100%, 4px);
     }
     &__googleplus {
-        @include SocialButton($white-color, $google);
+        @include SocialButton($white-color, $google, 25px, 100%, 4px);
+    }
+    &__existing {
+        font-size: .8rem;
+        text-align: center;
+        padding: 10px 0;
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
     //ant-design overright
     .ant-input {
