@@ -1,0 +1,81 @@
+// Register Style
+// @import "./_partials/mixins";
+$text-color: #748AA1;
+$white-color: rgb(255, 255, 255);
+$twitter: #00ADEE;
+$google: #DD4B39;
+$facebook: #3B5998;
+
+.register {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 45%;
+    padding: 10px 25px 30px;
+    // margin: 0 5em 0 0;
+    position: absolute;
+    top: 4rem;
+    left: 5rem;
+    border-radius: 5px;
+    transition: ease all 0.55s;
+    animation: fadeInLeft 1s linear 1s;
+    background-color: rgba(0, 0, 0, 0.42);
+
+    &__header {
+        transition: ease all 0.55s;
+        h2 {
+            color: #fff;
+            font-family: 'Gotham-Bold', sans-serif;
+            font-size: 2.3rem;
+            margin: 0;
+        }
+        h5 {
+            color: $text-color;
+            font-family: 'Roboto-Thin', sans-serif;
+            margin: 0;
+            padding: 10px 0;
+        }
+    }
+    &__formContent {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 1px 4px #E5E9F2;
+        padding: 15px;
+        &__formField {
+            margin-right: 20.23%;
+            padding: 5px;
+        }
+    }
+    &__formgroup {
+        margin-bottom: 1px;
+        label {
+            display: flex;
+            color: $text-color;
+            font-size: 0.75rem;
+        }
+    }
+    &__twitter {
+        @include SocialButton($white-color, $twitter);
+    }
+    &__facebook {
+        @include SocialButton($white-color, $facebook);
+    }
+    &__googleplus {
+        @include SocialButton($white-color, $google);
+    }
+    //ant-design overright
+    .ant-input {
+        height: 25px;
+    }
+    .ant-select {
+        width: 100%;
+    }
+    .ant-btn-primary {
+        border-color: #29CB97;
+        background: #29CB97;
+    }
+    .ant-divider {
+        margin: 3px 0 !important;
+        font-size: 12px !important;
+    }
+}

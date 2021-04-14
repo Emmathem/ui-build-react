@@ -1,5 +1,7 @@
 @import "./_partials/mixins";
 
+//var
+$text-color: #748AA1;
 * {
     box-sizing: border-box;
 }
@@ -8,10 +10,9 @@ html,
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
+    // height: 100%;
+    // width: 100%;
     font-size: 100%;
-    // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Arial-bold, arial, sans-serif;
     font-family: 'Gotham-XLight', sans-serif;
 }
 
@@ -24,6 +25,10 @@ body {
     padding: 10px 0;
     z-index: 1;
 
+    a {
+        text-decoration: none;
+    }
+
     &__logo {
         padding: 5px;
         margin-right: 40px;
@@ -34,12 +39,20 @@ body {
         }
     }
 }
-
+.text-color {
+    color: $text-color;
+}
+.wow {
+    visibility: hidden;
+    overflow: hidden;
+}
 .landing {
     display: flex;
     height: 100vh;
     width: 100%;
     transition: ease all 0.5s;
+    overflow: hidden;
+
     &__bgCover {
         background: url("../images/tender-young-blonde.jpg") no-repeat center;
         height: 100%;
@@ -49,7 +62,6 @@ body {
     }
 
     &__welcome {
-        // border: 1px solid #fff;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -60,6 +72,8 @@ body {
         position: absolute;
         top: 9rem;
         left: 5rem;
+        transition: ease all 0.55s;
+        animation: fadeInLeft 1s linear 1s;
     }
 
     &__content {
@@ -69,6 +83,7 @@ body {
         justify-content: flex-start;
         color: #fff;
         margin-bottom: 20px;
+
         h3 {
             font-size: 1.4rem;
             margin: 0 0px 20px 0px;
@@ -83,57 +98,33 @@ body {
             // color: #000;
         }
     }
+
     &__getStartedBtn {
         outline: none;
         border: 0;
         background: #000;
         color: #fff;
-        padding: .81rem 1.22rem;
+        padding: .81rem 1rem;
         text-transform: uppercase;
-        font-family: 'Gotham-Bold', sans-serif;
-        // height: 45px;
-        // width: 50%;
-    }
-}
+        cursor: pointer;
+        letter-spacing: 2px;
+        transform: translateX(0);
+        display: flex;
+        height: 45px;
+        width: 40%;
+        justify-content: center;
+        align-items: center;
 
-//mobile style
-@media(max-width: 768px) {
-    .landing {
-        &__bgCover {
-            background: url("../images/tender-young-blonde.jpg") no-repeat;
-            background-size: cover;
+        &:hover {
+            border: 1px solid #fff;
             overflow: hidden;
-            background-position: right -130px bottom 10px;
-        }
-
-        &__welcome {
-            min-width: 85%;
-            background: rgba(0, 0, 0, .5);
-            padding: 4rem 2rem;
-            margin: 0 20px;
-            top: 12rem;
-            left: 0;
-            right: 0;
-        }
-
-        &__content {
-            padding: 0 10px 0 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            color: #fff;
-
-            h3 {
-                font-size: 1.4rem;
-                margin: 0 0px 20px 0px;
-                padding: 0;
-            }
-
-            h4 {
-                font-size: 1.6rem;
-                margin: 0;
-                // color: #000;
-            }
+            transform: translateX(2px);
+            background: none;
+            transition: ease all 0.5s;
+            font-family: 'Gotham-Bold', sans-serif;
         }
     }
 }
+
+@import "./auth.scss";
+@import "./mobile.scss";

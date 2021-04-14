@@ -1,0 +1,48 @@
+@mixin Gotham($font-family, $font-file, $weight) {
+    @font-face {
+        font-family: $font-family;
+        //   src: url($font-file+'.eot');
+        src: url($font-file+'.otf') format('OpenType');
+        font-weight: $weight;
+        font-style: normal;
+    }
+}
+
+@mixin Roboto ($font-family, $font-file, $weight, $style){
+    @font-face {
+        font-family: $font-family;
+        src: url($font-file+'.ttf') format('truetype');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+// Gotham Font
+@include Gotham('Gotham-Bold', '../fonts/Gotham-Font/Gotham-Bold', 700);
+@include Gotham('Gotham-Thin', '../fonts/Gotham-Font/Gotham-Thin', 100);
+@include Gotham('Gotham-ThinItalic', '../fonts/Gotham-Font/Gotham-ThinItalic', 100);
+@include Gotham('Gotham-XLight', '../fonts/Gotham-Font/Gotham-XLight', normal);
+@include Gotham('Gotham-Medium', '../fonts/Gotham-Font/Gotham-XLight', normal);
+@include Gotham('Gotham-Medium', '../fonts/Gotham-Font/Gotham-XLight', normal);
+
+//Include Roboto Fonts
+@include Roboto('Roboto-Regular', '../fonts/Roboto/Roboto-Regular', 100, normal);
+@include Roboto('Roboto-Light', '../fonts/Roboto/Roboto-Light', 100, normal);
+@include Roboto('Roboto-Thin', '../fonts/Roboto/Roboto-Thin', 'lighter', normal);
+
+//Social Button
+
+@mixin SocialButton($textColor, $bgColor) {
+    background: $bgColor;
+    color: $textColor;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    width: 100%;
+    outline: 0;
+    font-size: 9px;
+    border: none;
+    line-height: 11px;
+    justify-content: space-evenly;
+}
