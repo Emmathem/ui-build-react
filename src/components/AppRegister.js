@@ -22,7 +22,7 @@ const AppRegister = () => {
       </Helmet>
       <div
         className="animated wow fadeIn register"
-        data-wow-delay="1.6s"
+        data-wow-delay="1.2s"
         data-wow-duration="1.1s"
       >
         <div className="hideOnMobile">

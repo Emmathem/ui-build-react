@@ -15,7 +15,7 @@ const AppWelcome = () => {
       </Helmet>
       <div
         className="wow animated fadeInLeft  landing__welcome"
-        data-wow-delay="2s"
+        data-wow-delay="1.2s"
         data-wow-duration="2s"
       >
         <div className="landing__content">
