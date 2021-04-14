@@ -50,13 +50,13 @@
         }
     }
     &__twitter {
-        @include SocialButton($white-color, $twitter, 25px, 100%, 4px);
+        @include SocialButton($white-color, $twitter, 100%, 25px, 4px);
     }
     &__facebook {
-        @include SocialButton($white-color, $facebook, 25px, 100%, 4px);
+        @include SocialButton($white-color, $facebook, 100%, 25px, 4px);
     }
     &__googleplus {
-        @include SocialButton($white-color, $google, 25px, 100%, 4px);
+        @include SocialButton($white-color, $google, 100%, 25px, 4px);
     }
     &__existing {
         font-size: .8rem;
