@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import AppHeader from "./components/AppHeader";
 import AppLogin from "./components/desperate_escort/AppLogin";
 import AppRegister from "./components/desperate_escort/AppRegister";
 import AppLandingPage from "./components/AppLandingPage";
