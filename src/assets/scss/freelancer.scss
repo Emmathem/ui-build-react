@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap');
 @import "./_partials/vars";
 
+.wow {
+    visibility: hidden;
+}
 .freelancer {
     display: flex;
     width: 100%;
@@ -27,6 +30,45 @@
         background-position: bottom;
         overflow: hidden;
         margin-top: 3rem;
+    }
+
+    &__designer {
+        display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 36%;
+    bottom: 40px;
+
+        h3 {
+            color: $white-color;
+            font-weight: 700;
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        small {
+            font-size: 1rem;
+            font-weight: lighter;
+        }
+    }
+
+    &__lines {
+        display: flex;
+
+        >div {
+            min-height: 2px;
+            flex: 1;
+            margin: 0 1px;
+            display: flex;
+            justify-content: space-evenly;
+
+            &:first-child {
+                background-color: $white-color;
+                margin-left: 0;
+            }
+
+            background-color: $black-color;
+        }
     }
 }
 

@@ -1,6 +1,7 @@
 import { Button } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
+import HomeIcon from "@material-ui/icons/Home";
 
 const AppHeader = () => {
   return (
@@ -12,7 +13,15 @@ const AppHeader = () => {
         <div className="lancerheader__sidenav">
           <ul>
             <li>
-              <Link to="/freelancer/welcome" className="freeColor">Find Expects</Link>
+              <Link to="/">
+                <HomeIcon size="large" style={{ color: "#000" }} />
+                {/* <span>Home</span> */}
+              </Link>
+            </li>
+            <li>
+              <Link to="/freelancer/welcome" className="freeColor">
+                Find Expects
+              </Link>
             </li>
             <li>
               <Link to="/freelancer/welcome">About Us</Link>
@@ -22,7 +31,9 @@ const AppHeader = () => {
             </li>
             <li>
               <Link to="/freelancer/welcome">
-                <Button type="default" className="button">Join Now</Button>
+                <Button type="default" className="button">
+                  Join Now
+                </Button>
               </Link>
             </li>
           </ul>

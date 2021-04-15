@@ -13,16 +13,36 @@ const AppFreelanceLanding = () => {
       </Helmet>
       <AppHeader />
       <div className="freelancer__sideCol leftCol">
-        <div className="freelancer__leftContent"></div>
+        <div className="freelancer__leftContent">
+          <div className="freelancer__designer">
+            <h3>Ade Mac</h3>
+            <small>Frontend Developer</small>
+            <div className="freelancer__lines">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="freelancer__sideCol rightCol">
         <div className="freeContent">
           <div className="freeContent__inner">
-            <div className="freeContent__header">
-              <h3>Find the perfect <i>freelancer</i></h3>
+            <div
+              className="wow animated fadeIn freeContent__header"
+              data-wow-delay="1s"
+              data-wow-duration="2s"
+            >
+              <h3>
+                Find the perfect <i>freelancer</i>
+              </h3>
               <h4>& Get Your Job Done</h4>
             </div>
-            <div className="freeContent__details">
+            <div
+              className="wow animated zoomIn freeContent__details"
+              data-wow-delay="1.4s"
+              data-wow-duration="2s"
+            >
               <p>
                 Whatever your needs, there will be a freelancer to get it done.
                 It's easy. Simply post a job you need completed and receive
@@ -37,7 +57,9 @@ const AppFreelanceLanding = () => {
                   </Option>
                 </Select>
               </div>
-              <Button className="button" type="default" block>Find Experts</Button>
+              <Button className="button" type="default" block>
+                Find Experts
+              </Button>
             </div>
           </div>
         </div>
