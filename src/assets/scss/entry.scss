@@ -227,9 +227,20 @@
             font-size: .71em;
 
             &.slideDown {
-                right: 0;
-                bottom: 43%;
+                right: 43%;
+                bottom: 8%;
+                width: 60px;
+            height: 60px;
+            font-size: .51em;
                 transition: ease all 1s;
+            }
+        }
+        &__welcome {
+            top: 35%;
+            letter-spacing: 1px;
+    
+            h4 {
+                font-size: 1.5em;
             }
         }
     }

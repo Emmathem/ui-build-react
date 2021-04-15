@@ -12,6 +12,7 @@ const AppLandingPage = () => {
   const openMenuPage = () => {
     setIsHover(!hover);
   };
+  // const gridObject = { xs: 8, sm: 16, md: 24, lg: 32 };
   return (
     <div className="entrypage">
       <Helmet>
@@ -26,22 +27,22 @@ const AppLandingPage = () => {
           <h3>Select a Project</h3>
           <div className="workdone__section">
             <Row gutter={[16, 16]}>
-              <Col span={6}>
+              <Col xs={12} xl={8} lg={6}>
                 <div className="workdone__eachSection">
                   <Link to="/desperate-escort">D.E</Link>
                 </div>
               </Col>
-              <Col span={6}>
+              <Col xs={12} xl={8} lg={6}>
                 <div className="workdone__eachSection">
                   <Link to="/freelancer/welcome">F.R</Link>
                 </div>
               </Col>
-              <Col span={6}>
+              <Col xs={12} xl={8} lg={6}>
                 <div className="workdone__eachSection">
                   <Link>C.V</Link>
                 </div>
               </Col>
-              <Col span={6}>
+              <Col xs={12} xl={8} lg={6}>
                 <div className="workdone__eachSection">
                   <Link>D.E</Link>
                 </div>
