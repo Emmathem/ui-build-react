@@ -4,6 +4,7 @@ import AppLogin from "./components/desperate_escort/AppLogin";
 import AppRegister from "./components/desperate_escort/AppRegister";
 import AppLandingPage from "./components/AppLandingPage";
 import AppDesperate from "./components/desperate_escort/AppDesperate";
+import AppFreelanceLanding from "./components/freelancer/AppFreelanceLanding";
 
 const App = () => {
 
@@ -15,6 +16,7 @@ const App = () => {
             <Route path="/desperate-escort" component={AppDesperate} />
             <Route path="/register" component={AppRegister} />
             <Route path="/login" component={AppLogin} />
+            <Route path="/freelancer/welcome" component={AppFreelanceLanding} />
           </Switch>
       </Router>
     </div>

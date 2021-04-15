@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap');
+@import "./_partials/vars";
+
+.freelancer {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+
+    &__sideCol {
+        height: 100vh;
+        flex: 1;
+
+        &.leftCol {
+            background: $freelanceColor;
+        }
+
+        &.rightCol {
+            background: $white-color;
+        }
+    }
+
+    &__leftContent {
+        background: url('../images/portrait-cheerful-emotional-senior.png') no-repeat;
+        background-size: contain;
+        height: 100%;
+        width: 100%;
+        background-position: bottom;
+        overflow: hidden;
+        margin-top: 3rem;
+    }
+}
+
+.freeContent {
+    background: url('../images/freelancer_bg.png') no-repeat right;
+    background-size: contain;
+    max-height: 85%;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    margin: 5rem 0 0 -2rem;
+
+    &__inner {
+        padding: 5em 10em 11em 5em;
+    }
+
+    &__header {
+        padding: 10px 0;
+
+        h3 {
+            color: $freelanceColor;
+            font-size: 2rem;
+            margin: 0;
+            font-weight: 800;
+        }
+
+        h4 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #222222;
+        }
+    }
+
+    &__details {
+        padding: 20px 0;
+
+        p {
+            line-height: 24px;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        label {
+            display: flex;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 30px;
+        }
+
+        .ant-select {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #979797;
+            // padding: 1px 15px;
+            outline: none;
+        }
+
+        .button {
+            background-color: #000;
+            color: $white-color;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-weight: lighter;
+            height: 35px;
+        }
+
+        .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+            border: 1px solid #979797;
+            border-radius: 0;
+            outline: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    &__group {
+        margin-bottom: 5px;
+    }
+}
+
+// freelancer header
+.lancerheader {
+    display: flex;
+    width: 100%;
+    // background: rgba(0, 0, 0, .4);
+    position: absolute;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1;
+
+    &__logo {
+        display: flex;
+        flex: 1;
+
+        h4 {
+            font-size: 2rem;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 800;
+            color: $white-color;
+            padding-left: 15px;
+        }
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__sidenav {
+        display: flex;
+        align-self: center;
+        align-items: center;
+
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            align-items: center;
+        }
+
+        li a {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0 10px;
+            color: #000;
+            font-weight: 700;
+            font-size: .8rem;
+            transition: ease all 0.5s;
+
+            &:hover {
+                transform: translateY(-10%);
+                transition: ease all .5s;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 70%;
+                    bottom: -2px;
+                    margin: auto;
+                    min-height: 1px;
+                    background-color: #fec23e;
+                    transition: ease all .5s;
+                    animation: slideInLeft 2s linear 2s;
+                }
+            }
+
+            &.freeColor {
+                color: $freelanceColor;
+            }
+        }
+
+        .button {
+            background: $freelanceColor;
+            border-radius: 5px;
+            color: $white-color;
+            box-shadow: none;
+            outline: none;
+            border: none;
+        }
+    }
+}

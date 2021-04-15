@@ -33,7 +33,7 @@ const AppLandingPage = () => {
               </Col>
               <Col span={6}>
                 <div className="workdone__eachSection">
-                  <Link>F.R</Link>
+                  <Link to="/freelancer/welcome">F.R</Link>
                 </div>
               </Col>
               <Col span={6}>

@@ -33,10 +33,14 @@ body {
     &__logo {
         padding: 5px;
         margin-right: 40px;
-
+        display: flex;
+        align-items: center;
         // margin: 18px 20px 0;
         img {
             object-fit: contain;
+        }
+        > div {
+            margin-right: 20px;
         }
     }
 }
