@@ -128,7 +128,7 @@
             color: $white-color;
             margin-top: 10px;
             border-radius: 5px;
-            font-weight: lighter;
+            font-weight: normal;
             height: 35px;
         }
 
@@ -252,6 +252,8 @@
             background: $freelanceColor;
             border-radius: 5px;
             color: $white-color;
+            box-shadow: none;
+            border: none;
         }
 
         h3 {
@@ -263,15 +265,26 @@
     }
 
     .mobileContent {
-        padding: 3rem;
+        padding: 3rem 3.2rem;
 
         h3 {
             color: $white-color;
             font-size: 1.2rem;
+            margin-bottom: 0;
+            font-weight: 800;
         }
 
         h4 {
             font-size: 1.2rem;
+        }
+        .button {
+            background-color: #000;
+            color: $white-color;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-weight: normal;
+            height: 40px;
+            border: none;
         }
     }
 
@@ -292,11 +305,64 @@
             overflow: hidden;
             margin-top: 3rem;
         }
+        &__designer {
+            left: 46%;
+            bottom: 40px;
+    
+            h3 {
+                color: $freelanceColor;
+                font-weight: normal;
+                font-size: 1em;
+            }
+    
+            small {
+                font-size: .91rem;
+                font-weight: normal;
+            } 
+        }
+        &__lines {
+            display: flex;
+    
+            >div {
+                min-height: 2px;
+                flex: 1;
+                margin: 0 1px;
+                display: flex;
+                justify-content: space-evenly;
+    
+                &:first-child {
+                    background-color: $freelanceColor;
+                    margin-left: 0;
+                }
+            }
+        }
     }
 
     .freeContent {
         // background: url('../images/handsome-man-with-laptop.png') no-repeat right;
         max-height: 80%;
         margin: 1rem 0 0 -1rem;
+        &__details {
+            padding: 10px 0;
+            label {
+                display: flex;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 30px;
+            }
+    
+            .ant-select {
+                height: 45px;
+            }
+            .ant-select-selection-item {
+                line-height: 38px !important;
+            }
+            .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+                height: 45px;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
     }
 }

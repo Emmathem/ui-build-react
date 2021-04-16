@@ -55,6 +55,15 @@ const AppFreelanceLanding = () => {
         <div className="freeContent">
           <div className="freeContent__mobileBG hideOnWeb">
             <img src={MobileBg} alt="laptop" />
+            <div className="freelancer__designer">
+            <h3>Ade Mac</h3>
+            <small>Frontend Developer</small>
+            <div className="freelancer__lines">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
           </div>
           <div className="freeContent__inner hideOnMobile">
             <div
