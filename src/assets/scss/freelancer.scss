@@ -297,16 +297,10 @@
         }
 
         &__leftContent {
-            background-image: none;
-            background-size: contain;
-            height: 100%;
-            width: 100%;
-            background-position: bottom;
-            overflow: hidden;
             margin-top: 3rem;
         }
         &__designer {
-            left: 46%;
+            left: 48%;
             bottom: 40px;
     
             h3 {
@@ -321,15 +315,7 @@
             } 
         }
         &__lines {
-            display: flex;
-    
             >div {
-                min-height: 2px;
-                flex: 1;
-                margin: 0 1px;
-                display: flex;
-                justify-content: space-evenly;
-    
                 &:first-child {
                     background-color: $freelanceColor;
                     margin-left: 0;
@@ -362,6 +348,12 @@
                 &:focus {
                     outline: none;
                 }
+            }
+        }
+        &__mobileBG {
+            img {
+                object-fit: contain;
+                width: 67%;
             }
         }
     }
