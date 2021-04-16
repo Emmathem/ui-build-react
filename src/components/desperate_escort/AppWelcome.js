@@ -12,6 +12,15 @@ const AppWelcome = () => {
     <div>
       <Helmet>
         <title>Welcome | Meet A Desperate Escort</title>
+        <meta
+          name="author"
+          content="Developer: Temitope Falua, Designer: Gbolayo Olawumi"
+        />
+        <meta
+          name="description"
+          content=" Want to enjoy your holidays, weekend, we offer affordable and
+          exclusive escorts"
+        />
       </Helmet>
       <div
         className="wow animated fadeInLeft  landing__welcome"

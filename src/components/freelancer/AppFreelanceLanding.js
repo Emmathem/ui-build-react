@@ -2,7 +2,7 @@ import { Button, Select } from "antd";
 import React from "react";
 import { Helmet } from "react-helmet";
 import "../../assets/css/freelancer.css";
-import MobileBg from '../../assets/images/handsome-man-with-laptop.png';
+import MobileBg from "../../assets/images/handsome-man-with-laptop.png";
 import AppHeader from "./AppHeader";
 const { Option } = Select;
 
@@ -11,6 +11,14 @@ const AppFreelanceLanding = () => {
     <div className="freelancer">
       <Helmet>
         <title>Hire A Freelance | Welcome</title>
+        <meta
+          name="author"
+          content="Developer: Temitope Falua, Designer: Gbolayo Olawumi"
+        />
+        <meta
+          name="description"
+          content="Get a freelance for your jobs... reliable and effective"
+        />
       </Helmet>
       <AppHeader />
       <div className="freelancer__sideCol leftCol">
@@ -56,14 +64,14 @@ const AppFreelanceLanding = () => {
           <div className="freeContent__mobileBG hideOnWeb">
             <img src={MobileBg} alt="laptop" />
             <div className="freelancer__designer">
-            <h3>Temitope Falua</h3>
-            <small>Frontend Developer</small>
-            <div className="freelancer__lines">
-              <div></div>
-              <div></div>
-              <div></div>
+              <h3>Temitope Falua</h3>
+              <small>Frontend Developer</small>
+              <div className="freelancer__lines">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
-          </div>
           </div>
           <div className="freeContent__inner hideOnMobile">
             <div

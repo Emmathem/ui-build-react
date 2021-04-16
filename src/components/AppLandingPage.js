@@ -17,6 +17,11 @@ const AppLandingPage = () => {
     <div className="entrypage">
       <Helmet>
         <title>Welcome | Project Design</title>
+        <meta
+          name="author"
+          content="Developer: Temitope Falua, Designer: Gbolayo Olawumi"
+        />
+        <meta content="A group of landing pages for website" />
       </Helmet>
       <div className="workdone">
         <div
