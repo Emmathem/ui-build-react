@@ -1,6 +1,6 @@
 @import "./_partials/vars";
 @import "./_partials/mixins";
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500;800&display=swap');
 
 * {
     box-sizing: border-box;
@@ -35,11 +35,13 @@ body {
         margin-right: 40px;
         display: flex;
         align-items: center;
+
         // margin: 18px 20px 0;
         img {
             object-fit: contain;
         }
-        > div {
+
+        >div {
             margin-right: 20px;
         }
     }
@@ -48,24 +50,30 @@ body {
 .text-color {
     color: $text-color;
 }
+
 .btnColor {
     color: $primaryButton;
+
     a {
         text-decoration: underline;
+
         &:hover {
             text-decoration: underline;
             color: $primaryButton;
         }
     }
 }
+
 .text-center {
     text-align: center;
     display: flex;
     justify-content: center;
 }
+
 .white-color {
     color: $white-color;
 }
+
 .wow {
     visibility: hidden;
     // overflow: hidden;
@@ -147,6 +155,139 @@ body {
             background: none;
             transition: ease all 0.5s;
             font-family: 'Gotham-Bold', sans-serif;
+        }
+    }
+}
+
+//Connect Styles
+.connectHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 22px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    .ant-btn-primary {
+        background: rgba(0, 0, 0, .8);
+        color: $white-color;
+        border: none;
+        border-radius: 0 50px 50px 0 !important;
+    }
+
+    .ant-input {
+        background-color: rgba(0, 0, 0, .8);
+        border-radius: 50px;
+        border: none;
+        color: $white-color;
+        font-family: 'Roboto-Regular';
+        font-weight: normal;
+        outline: none;
+
+        &:focus {
+            border-color: $freelanceColor;
+        }
+    }
+
+    .ant-input-group-addon {
+        border-radius: 50px;
+        background-color: transparent;
+    }
+
+    .ant-input-search-button {
+        height: 30px;
+    }
+}
+
+.connect {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background: url('../images/loving-couple-kissing-rain.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    &__mobileicon {
+        position: absolute;
+        bottom: 5rem;
+        right: 45%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $freelanceColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        transition: ease all 0.5s;
+        animation: bounce 5s infinite 5s;
+        a {
+            color: $white-color;
+        }
+    }
+    &__bgCover {
+        @include backdrop($black-color, .8, 100%);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: auto;
+        position: relative;
+
+        &__header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center
+        }
+
+        &__innerheader {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+            align-items: center;
+
+            h2 {
+                color: $freelanceColor;
+                font-size: 3rem;
+                margin-bottom: 0;
+                font-weight: 800;
+                margin-left: 10px;
+            }
+        }
+
+        p {
+            color: $white-color;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        &__actions {
+            margin-top: 10px;
+            width: 50%;
+
+            .button {
+                border-radius: 5px;
+                border: none;
+                margin-bottom: 5px;
+
+                &.btn-started {
+                    background-color: $freelanceColor;
+                }
+
+                &.btn-login {
+                    background-color: $white-color;
+                }
+            }
+        }
+
+        &__store {
+            margin-top: 2em;
         }
     }
 }

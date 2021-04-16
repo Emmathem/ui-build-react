@@ -184,7 +184,18 @@
         &:hover {
             transition: ease all 0.5s;
             transform: translateY(-10%);
+            &__name {
+                visibility: visible;
+                transition: ease all 0.5s;
+            }
         }
+    }
+    &__name {
+        font-size: .9rem;
+        text-align: center;
+        font-weight: normal;
+        transition: ease all 0.5s;
+        visibility: hidden;
     }
 }
 

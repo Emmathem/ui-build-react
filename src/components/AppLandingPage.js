@@ -36,21 +36,25 @@ const AppLandingPage = () => {
                 <div className="workdone__eachSection">
                   <Link to="/desperate-escort">D.E</Link>
                 </div>
+                <div className="workdone__name">Desperate Escort</div>
               </Col>
               <Col xs={12} xl={8} lg={6}>
                 <div className="workdone__eachSection">
                   <Link to="/freelancer/welcome">F.R</Link>
                 </div>
+                <div className="workdone__name">Freelancer</div>
               </Col>
               <Col xs={12} xl={8} lg={6}>
                 <div className="workdone__eachSection">
-                  <Link>C.V</Link>
+                  <Link to="/connect/welcome">C.N</Link>
                 </div>
+                <div className="workdone__name">The Connect</div>
               </Col>
               <Col xs={12} xl={8} lg={6}>
                 <div className="workdone__eachSection">
                   <Link>D.E</Link>
                 </div>
+                <div className="workdone__name">Desperate Escort</div>
               </Col>
             </Row>
           </div>

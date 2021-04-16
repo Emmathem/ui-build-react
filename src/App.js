@@ -5,6 +5,7 @@ import AppRegister from "./components/desperate_escort/AppRegister";
 import AppLandingPage from "./components/AppLandingPage";
 import AppDesperate from "./components/desperate_escort/AppDesperate";
 import AppFreelanceLanding from "./components/freelancer/AppFreelanceLanding";
+import AppConnectHome from "./components/connect/AppConnectHome";
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="/register" component={AppRegister} />
             <Route path="/login" component={AppLogin} />
             <Route path="/freelancer/welcome" component={AppFreelanceLanding} />
+            <Route path="/connect/welcome" component={AppConnectHome} />
           </Switch>
       </Router>
     </div>

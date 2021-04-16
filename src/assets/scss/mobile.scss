@@ -130,6 +130,41 @@
             border-top: $white-color !important;
         }
     }
+    .connect {
+        transform: ease all 0.5s;
+        &__content {
+            // border: 1px solid $freelanceColor;
+            &__header {
+                margin-bottom: 2rem;
+            }
+            &__innerheader {    
+                h2 {
+                    font-size: 3rem;
+                }
+            }
+    
+            p {
+                font-size: 1.2rem;
+            }
+    
+            &__actions {
+                margin-top: 10px;
+                width: 80%;
+                .button {
+                    padding: 10px 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 40px;
+                    font-weight: normal;
+                    margin-bottom: 15px;
+                }
+            }
+            &__store {
+                margin-top: 10rem;
+            }
+        }
+    }
     .hideOnMobile {
         display: none;
     }
