@@ -1,5 +1,6 @@
 @import "./_partials/vars";
 @import "./_partials/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 .extendedHeader {
     display: flex;
@@ -37,6 +38,7 @@
     background: $black-color;
     width: 100%;
     height: 100vh;
+    transition: ease all 0.5s;
 
     &__lang {
         position: absolute;
@@ -67,17 +69,102 @@
                     margin: 0;
                     left: 22px;
                     bottom: 11px;
+
                     &:last-child {
                         background: transparent;
                     }
                 }
+
                 &.active {
                     color: $white-color;
                 }
+
                 &:hover {
                     @extend .active;
                 }
             }
         }
+    }
+
+    &__inner {
+        display: flex;
+        width: 100%;
+
+        &__col {
+            display: flex;
+            flex: 1;
+        }
+    }
+    &__mostInner {
+        border: 1px solid $freelanceColor;
+        margin: 6rem 2rem;
+        display: flex;
+        width: 100%;
+    }
+
+    &__content {
+        padding: 2rem 0;
+        font-family: 'Lato', sans-serif;
+        margin: auto;
+
+        h4 {
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $white-color;
+            position: relative;
+            margin-bottom: 0;
+            &:after {
+                content: "";
+                position: absolute;
+                width: 10%;
+                left: 0;
+                min-height: 1px;
+                background-color: $white-color;
+                margin-left: 0;
+                bottom: 0;
+            }
+        }
+
+        h2 {
+            color: $codColor;
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 0;
+        }
+        h3 {
+            @extend h2;
+            color: $white-color;
+            line-height: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        &__span1 {
+            color: $white-color;
+            font-family: 'Roboto-Normal', sans-serif;
+            font-weight: 700;
+            font-size: .91rem;
+            letter-spacing: 0.27rem;
+            display: flex;
+            align-items: center;
+            span {
+                letter-spacing: normal;
+                color: $codColor;
+            }
+        }
+
+        &__button {
+            border-radius: 54px;
+            border-color: $codColor;
+            background-color: $codColor;
+            text-transform: uppercase;
+            color: $black-color;
+            font-weight: 900;
+        }
+    }
+
+    &__slideshow {
+        border: 1px solid $white-color;
+        padding: 10px;
     }
 }
