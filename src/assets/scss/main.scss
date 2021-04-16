@@ -140,11 +140,12 @@ body {
         padding: .81rem 1rem;
         text-transform: uppercase;
         cursor: pointer;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         transform: translateX(0);
         display: flex;
-        height: 45px;
-        width: 40%;
+        // height: 45px;
+        width: 50%;
+        font-family: 'Gotham-Bold', sans-serif;
         justify-content: center;
         align-items: center;
 

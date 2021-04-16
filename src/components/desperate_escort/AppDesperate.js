@@ -6,7 +6,7 @@ const AppDesperate = () => {
   return (
     <div className="landing">
       <AppHeader />
-      <div className="wow animated fadeIn landing__bgCover">
+      <div className="landing__bgCover">
         <AppWelcome />
       </div>
     </div>

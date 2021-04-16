@@ -33,28 +33,28 @@ const AppLandingPage = () => {
           <div className="workdone__section">
             <Row gutter={[16, 16]}>
               <Col xs={12} xl={8} lg={6}>
-                <div className="workdone__eachSection">
-                  <Link to="/desperate-escort">D.E</Link>
-                </div>
+                <Link to="/desperate-escort" className="workdone__eachSection">
+                  <div>D.E</div>
+                </Link>
                 <div className="workdone__name">Desperate Escort</div>
               </Col>
               <Col xs={12} xl={8} lg={6}>
-                <div className="workdone__eachSection">
-                  <Link to="/freelancer/welcome">F.R</Link>
-                </div>
+                <Link to="/freelancer/welcome" className="workdone__eachSection">
+                  <div>F.R</div>
+                </Link>
                 <div className="workdone__name">Freelancer</div>
               </Col>
               <Col xs={12} xl={8} lg={6}>
-                <div className="workdone__eachSection">
-                  <Link to="/connect/welcome">C.N</Link>
-                </div>
+                <Link to="/connect/welcome" className="workdone__eachSection">
+                  <div>C.N</div>
+                </Link>
                 <div className="workdone__name">The Connect</div>
               </Col>
               <Col xs={12} xl={8} lg={6}>
-                <div className="workdone__eachSection">
-                  <Link>D.E</Link>
-                </div>
-                <div className="workdone__name">Desperate Escort</div>
+                <Link to="/cod-extended/welcome" className="workdone__eachSection">
+                  <div>C.D</div>
+                </Link>
+                <div className="workdone__name">Call of Duty</div>
               </Col>
             </Row>
           </div>

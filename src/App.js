@@ -6,6 +6,7 @@ import AppLandingPage from "./components/AppLandingPage";
 import AppDesperate from "./components/desperate_escort/AppDesperate";
 import AppFreelanceLanding from "./components/freelancer/AppFreelanceLanding";
 import AppConnectHome from "./components/connect/AppConnectHome";
+import AppCallOfDutyExtended from "./components/call_of_duty/AppCallOfDutyExtended";
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/login" component={AppLogin} />
             <Route path="/freelancer/welcome" component={AppFreelanceLanding} />
             <Route path="/connect/welcome" component={AppConnectHome} />
+            <Route path="/cod-extended/welcome" component={AppCallOfDutyExtended} />
           </Switch>
       </Router>
     </div>
