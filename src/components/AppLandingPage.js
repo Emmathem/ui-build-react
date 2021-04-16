@@ -20,7 +20,7 @@ const AppLandingPage = () => {
       </Helmet>
       <div className="workdone">
         <div
-          className="wow animated slideInDown workdone__inner"
+          className="wow animated zoomIn workdone__inner"
           data-wow-delay="5s"
           data-wow-duration="1.9s"
         >

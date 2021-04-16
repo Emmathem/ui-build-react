@@ -2,6 +2,7 @@ import { Button, Select } from "antd";
 import React from "react";
 import { Helmet } from "react-helmet";
 import "../../assets/css/freelancer.css";
+import MobileBg from '../../assets/images/handsome-man-with-laptop.png';
 import AppHeader from "./AppHeader";
 const { Option } = Select;
 
@@ -13,7 +14,32 @@ const AppFreelanceLanding = () => {
       </Helmet>
       <AppHeader />
       <div className="freelancer__sideCol leftCol">
-        <div className="freelancer__leftContent">
+        <div className="mobileContent hideOnWeb">
+          <div data-wow-delay="1s" data-wow-duration="2s">
+            <h3>
+              Find the perfect <i>freelancer</i>
+            </h3>
+            <h4>& Get Your Job Done</h4>
+          </div>
+          <div
+            className="freeContent__details"
+            data-wow-delay="1.4s"
+            data-wow-duration="2s"
+          >
+            <div className="freeContent__group">
+              <label>Select job category:</label>
+              <Select defaultValue="Mobile App Development">
+                <Option value="Mobile App Development">
+                  Mobile App Development
+                </Option>
+              </Select>
+            </div>
+            <Button className="button" type="default" block>
+              Find Experts
+            </Button>
+          </div>
+        </div>
+        <div className="freelancer__leftContent hideOnMobile">
           <div className="freelancer__designer">
             <h3>Ade Mac</h3>
             <small>Frontend Developer</small>
@@ -27,7 +53,10 @@ const AppFreelanceLanding = () => {
       </div>
       <div className="freelancer__sideCol rightCol">
         <div className="freeContent">
-          <div className="freeContent__inner">
+          <div className="freeContent__mobileBG hideOnWeb">
+            <img src={MobileBg} alt="laptop" />
+          </div>
+          <div className="freeContent__inner hideOnMobile">
             <div
               className="wow animated fadeIn freeContent__header"
               data-wow-delay="1s"

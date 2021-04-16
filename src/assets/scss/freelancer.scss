@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap');
 @import "./_partials/vars";
 
-.wow {
-    visibility: hidden;
-}
 .freelancer {
     display: flex;
     width: 100%;
@@ -34,10 +31,10 @@
 
     &__designer {
         display: flex;
-    position: absolute;
-    flex-direction: column;
-    left: 36%;
-    bottom: 40px;
+        position: absolute;
+        flex-direction: column;
+        left: 36%;
+        bottom: 40px;
 
         h3 {
             color: $white-color;
@@ -229,5 +226,77 @@
             outline: none;
             border: none;
         }
+    }
+}
+
+@media (min-width: 1024px) {
+    .hideOnWeb {
+        display: none;
+    }
+}
+
+//mobile style
+@media(max-width: 768px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    //mobile header
+    .lancerheader {
+        background: $white-color;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+
+        .button {
+            background: $freelanceColor;
+            border-radius: 5px;
+            color: $white-color;
+        }
+
+        h3 {
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 33px;
+            margin-bottom: 0;
+        }
+    }
+
+    .mobileContent {
+        padding: 3rem;
+
+        h3 {
+            color: $white-color;
+            font-size: 1.2rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .freelancer {
+        flex-direction: column;
+        height: 100vh;
+
+        &__sideCol {
+            height: 0;
+        }
+
+        &__leftContent {
+            background-image: none;
+            background-size: contain;
+            height: 100%;
+            width: 100%;
+            background-position: bottom;
+            overflow: hidden;
+            margin-top: 3rem;
+        }
+    }
+
+    .freeContent {
+        // background: url('../images/handsome-man-with-laptop.png') no-repeat right;
+        max-height: 80%;
+        margin: 1rem 0 0 -1rem;
     }
 }
