@@ -96,8 +96,7 @@
         }
     }
     &__mostInner {
-        border: 1px solid $freelanceColor;
-        margin: 6rem 2rem;
+        margin: 6rem 0 2rem 2rem;
         display: flex;
         width: 100%;
     }
@@ -105,7 +104,7 @@
     &__content {
         padding: 2rem 0;
         font-family: 'Lato', sans-serif;
-        margin: auto;
+        margin: 10px 6rem auto;
 
         h4 {
             font-size: 1.3rem;
@@ -160,11 +159,23 @@
             text-transform: uppercase;
             color: $black-color;
             font-weight: 900;
+            margin-top: 2rem;
         }
     }
 
     &__slideshow {
         border: 1px solid $white-color;
-        padding: 10px;
+        width: 100%;
+        margin: 0 0rem 0 12rem;
+        color: #fff;
+        h2 {
+            color: $white-color;
+            font-size: 1rem;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
 }
