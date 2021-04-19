@@ -104,7 +104,7 @@
     &__content {
         padding: 2rem 0;
         font-family: 'Lato', sans-serif;
-        margin: 10px 6rem auto;
+        margin: 10px 5rem auto 6rem;
 
         h4 {
             font-size: 1.3rem;
@@ -160,6 +160,11 @@
             color: $black-color;
             font-weight: 900;
             margin-top: 2rem;
+            height: 45px;
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 
