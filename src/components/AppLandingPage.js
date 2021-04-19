@@ -56,6 +56,12 @@ const AppLandingPage = () => {
                 </Link>
                 <div className="workdone__name">Call of Duty</div>
               </Col>
+              <Col xs={12} xl={8} lg={6}>
+                <Link to="/moversng" className="workdone__eachSection">
+                  <div>M.N</div>
+                </Link>
+                <div className="workdone__name">Movers NG</div>
+              </Col>
             </Row>
           </div>
         </div>

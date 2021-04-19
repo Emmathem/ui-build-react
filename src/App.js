@@ -7,6 +7,7 @@ import AppDesperate from "./components/desperate_escort/AppDesperate";
 import AppFreelanceLanding from "./components/freelancer/AppFreelanceLanding";
 import AppConnectHome from "./components/connect/AppConnectHome";
 import AppCallOfDutyExtended from "./components/call_of_duty/AppCallOfDutyExtended";
+import AppMoverLandingPage from "./components/mover_ng/AppMoverLandingPage";
 
 const App = () => {
 
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/freelancer/welcome" component={AppFreelanceLanding} />
             <Route path="/connect/welcome" component={AppConnectHome} />
             <Route path="/cod-extended/welcome" component={AppCallOfDutyExtended} />
+            <Route path="/moversng" component={AppMoverLandingPage} />
           </Switch>
       </Router>
     </div>
