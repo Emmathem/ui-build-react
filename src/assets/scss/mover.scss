@@ -18,7 +18,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
+        cursor: pointer;
         img {
             object-fit: contain;
             // width: 100%;
@@ -159,6 +159,97 @@
                 .MuiButton-root {
                     padding: 10px 16px;
                 }
+            }
+        }
+    }
+}
+
+//request form 
+.coverBg {
+    @include backdrop(#E5E5E5, 0.5, 100%);
+}
+.request {
+    display: flex;
+    margin: 7rem 4rem;
+    padding: 15px;
+    background: $white-color;
+    width: 100%;
+    font-family: 'Roboto-Regular', sans-serif;
+    transition: ease all 0.5s;
+    position: relative;
+    // align-items: center;
+    &__pcol {
+        flex: 1
+    }
+    &__container {
+        // border: 1px solid $black-color;
+        margin: 10px;
+    }
+    &__iconholder {
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        background: $black-color;
+        justify-content: center;
+        padding: 2px;
+        margin-right: 2px;
+        img {
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+        h4 {
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 18px; //1.2rem
+            margin-bottom: 0;
+            // font-family: 'Roboto-Bolder', sans-serif;
+        }
+    }
+    &__forms {
+        label {
+            font-weight: normal;
+            color: $labelColor;
+            font-size: .81rem;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .ant-input {
+            border-radius: 8px;
+            border: 1px solid #76AEFF;
+            height: 35px;
+            &:placeholder {
+                font-weight: lighter;
+            }
+        }
+        .MuiButton-contained {
+            background-color: #FEC23E;
+            color: $white-color;
+            box-shadow: none;
+            border-radius: 8px;
+        }
+        .MuiButton-containedSecondary {
+            background-color: $black-color;
+        }
+    }
+    &__vehicle {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+        >div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                padding-top: 5px;
+                font-weight: lighter;
             }
         }
     }

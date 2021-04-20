@@ -8,22 +8,34 @@ import AppFreelanceLanding from "./components/freelancer/AppFreelanceLanding";
 import AppConnectHome from "./components/connect/AppConnectHome";
 import AppCallOfDutyExtended from "./components/call_of_duty/AppCallOfDutyExtended";
 import AppMoverLandingPage from "./components/mover_ng/AppMoverLandingPage";
+import AppMoversRequestDetails from "./components/mover_ng/AppMoversRequestDetails";
+import AppMoversPayment from "./components/mover_ng/AppMoversPayment";
 
 const App = () => {
-
   return (
     <div className="">
       <Router>
         <Switch>
-            <Route exact path="/" component={AppLandingPage} />
-            <Route path="/desperate-escort" component={AppDesperate} />
-            <Route path="/register" component={AppRegister} />
-            <Route path="/login" component={AppLogin} />
-            <Route path="/freelancer/welcome" component={AppFreelanceLanding} />
-            <Route path="/connect/welcome" component={AppConnectHome} />
-            <Route path="/cod-extended/welcome" component={AppCallOfDutyExtended} />
-            <Route path="/moversng" component={AppMoverLandingPage} />
-          </Switch>
+          <Route exact path="/" component={AppLandingPage} />
+          <Route path="/desperate-escort" component={AppDesperate} />
+          <Route path="/register" component={AppRegister} />
+          <Route path="/login" component={AppLogin} />
+          <Route path="/freelancer/welcome" component={AppFreelanceLanding} />
+          <Route path="/connect/welcome" component={AppConnectHome} />
+          <Route
+            path="/cod-extended/welcome"
+            component={AppCallOfDutyExtended}
+          />
+          <Route path="/moversng" component={AppMoverLandingPage} />
+          <Route
+            path="/movers-ng/request"
+            component={AppMoversRequestDetails}
+          />
+          <Route
+            path="/moversng/request/payment"
+            component={AppMoversPayment}
+          />
+        </Switch>
       </Router>
     </div>
   );

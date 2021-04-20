@@ -26,6 +26,7 @@
 @include Gotham('Gotham-Medium', '../fonts/Gotham-Font/Gotham-XLight', normal);
 
 //Include Roboto Fonts
+@include Roboto('Roboto-Bolder', '../fonts/Roboto/Roboto-Bold', 900);
 @include Roboto('Roboto-Bold', '../fonts/Roboto/Roboto-Bold', 700);
 @include Roboto('Roboto-Regular', '../fonts/Roboto/Roboto-Regular', 100);
 @include Roboto('Roboto-Light', '../fonts/Roboto/Roboto-Light', 100);
