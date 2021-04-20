@@ -170,14 +170,14 @@
 }
 .request {
     display: flex;
-    margin: 7rem 4rem;
     padding: 15px;
     background: $white-color;
     width: 100%;
+    margin: 9rem 4rem;
     font-family: 'Roboto-Regular', sans-serif;
     transition: ease all 0.5s;
     position: relative;
-    // align-items: center;
+    align-items: center;
     &__pcol {
         flex: 1
     }
@@ -241,7 +241,7 @@
     &__vehicle {
         display: flex;
         justify-content: space-between;
-        padding: 2rem 0;
+        padding: 1.2rem 0;
         >div {
             display: flex;
             flex-direction: column;

@@ -6,8 +6,8 @@ import Boxes from "../../assets/images/boxes.png";
 import DeliveryMan from "../../assets/images/delivery-man.png";
 import DeliverTruck from "../../assets/images/delivery-truck-1.png";
 import SmallVehicle from "../../assets/images/Icon.png";
-import MediumVehicle from "../../assets/images/Icon-2.png";
-import LargeVehicle from "../../assets/images/Icon-1.png";
+import MediumVehicle from "../../assets/images/Icon-1.png";
+import LargeVehicle from "../../assets/images/Icon-2.png";
 import { Col, Input, Row } from "antd";
 import { Button } from "@material-ui/core";
 
