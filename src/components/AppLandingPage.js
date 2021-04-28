@@ -167,9 +167,9 @@ const AppLandingPage = () => {
         <AppParticles settings={particleSettings} />
       </div>
       <div
-        className="author wow animated slideInRight"
-        data-wow-delay="3s"
-        data-wow-duration="1.9s"
+        className={`author wow animated slideInRight ${hover ? "open" : ""}`}
+        data-wow-delay="1.9s"
+        data-wow-duration="3s"
       >
         <div className="author__developer">
           <AppCardFlip

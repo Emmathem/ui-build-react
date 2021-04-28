@@ -220,6 +220,12 @@
     right: 0;
     margin: 15px;
     transition: ease all 0.5s;
+    &.open {
+        right: -40%;
+        animation-name: slideOutRight !important;
+        animation-delay: 3s !important;
+        animation-duration: 2s !important;
+    }
 
     &__developer {
         height: 200px;
