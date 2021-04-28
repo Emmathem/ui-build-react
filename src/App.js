@@ -10,6 +10,7 @@ import AppCallOfDutyExtended from "./components/call_of_duty/AppCallOfDutyExtend
 import AppMoverLandingPage from "./components/mover_ng/AppMoverLandingPage";
 import AppMoversRequestDetails from "./components/mover_ng/AppMoversRequestDetails";
 import AppMoversPayment from "./components/mover_ng/AppMoversPayment";
+import TestScript from "./components/TestScript";
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
             path="/moversng/request/payment"
             component={AppMoversPayment}
           />
+          <Route path="/test" component={TestScript} />
         </Switch>
       </Router>
     </div>

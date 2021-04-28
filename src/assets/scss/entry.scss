@@ -50,7 +50,7 @@
 
         h4 {
             font-size: 3em;
-            color: #fff;
+            color: $white-color;
             text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.43);
         }
 
@@ -61,7 +61,7 @@
             transition: ease all 1s;
 
             h4 {
-                color: #000;
+                color: $black-color;
             }
         }
     }
@@ -76,13 +76,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        right: 46%;
+        right: 45%;
         bottom: 47%;
         transition: ease all 0.5s;
         -webkit-box-shadow: 0px 0px 41px -4px #969496;
         -moz-box-shadow: 0px 0px 41px -4px #969496;
         box-shadow: 0px 0px 41px -4px #969496;
-        border: 4px solid #fff;
+        border: 4px solid $white-color;
 
         &:hover {
             transform: scale(1.2);
@@ -103,6 +103,11 @@
     &__icon {
         font-size: 5em;
     }
+}
+
+#tsparticles {
+    width: 100%;
+    height: 100vh;
 }
 
 .workdone {
@@ -184,12 +189,14 @@
         &:hover {
             transition: ease all 0.5s;
             transform: translateY(-10%);
+
             &__name {
                 visibility: visible;
                 transition: ease all 0.5s;
             }
         }
     }
+
     &__name {
         font-size: .9rem;
         text-align: center;
@@ -201,6 +208,45 @@
 
 .__icon {
     font-size: 5em;
+}
+
+.author {
+    display: flex;
+    position: absolute;
+    padding: 10px;
+    align-items: center;
+    bottom: 0;
+    height: 200px;
+    right: 0;
+    margin: 15px;
+    transition: ease all 0.5s;
+
+    &__developer {
+        height: 200px;
+        width: 150px;
+        overflow: hidden;
+        margin-left: 10px;
+        // padding: 0 10px;
+        transition: ease all 0.5s;
+        border-radius: 4px;
+        background: #489bf7;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+        h3 {
+            margin-bottom: 0;
+            font-weight: bold;
+            color: $white-color;
+            font-size: 1.2rem;
+        }
+        small {
+            color: $black-color;
+            font-size: 85%;
+        }
+        &:hover {
+            box-shadow: none;
+            transition: ease all 0.5s;
+            // transform: rotate(360deg);
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -259,5 +305,9 @@
 
     .__icon {
         font-size: 2.5em;
+    }
+    .author__developer {
+        height: 100px;
+        width: 75px;
     }
 }

@@ -5,12 +5,67 @@ import LockOpenOutlinedIcon from "@material-ui/icons/LockOpenOutlined";
 import { Row, Col } from "antd";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import AppParticles from "./shared/AppParticles";
+import AppCardFlip from "./shared/AppCardFlip";
 
 const AppLandingPage = () => {
   const [hover, setIsHover] = useState(false);
 
   const openMenuPage = () => {
     setIsHover(!hover);
+  };
+
+  const particleSettings = {
+    particles: {
+      number: {
+        value: 8,
+        density: {
+          enable: true,
+          value_area: 800,
+        },
+      },
+      line_linked: {
+        enable: false,
+      },
+      move: {
+        speed: 1,
+        out_mode: "out",
+      },
+      shape: {
+        type: ["image", "circle"],
+        image: [
+          {
+            src: "/react.cd2ab268.svg",
+            height: 20,
+            width: 23,
+          },
+          {
+            src: "/k8s.2d579d24.svg",
+            height: 20,
+            width: 20,
+          },
+          {
+            src: "/code.b3b4c4f4.png",
+            height: 20,
+            width: 20,
+          },
+        ],
+      },
+      color: {
+        value: "#CCC",
+      },
+      size: {
+        value: 30,
+        random: false,
+        anim: {
+          enable: true,
+          speed: 4,
+          size_min: 10,
+          sync: false,
+        },
+      },
+    },
+    retina_detect: false,
   };
   // const gridObject = { xs: 8, sm: 16, md: 24, lg: 32 };
   return (
@@ -26,7 +81,7 @@ const AppLandingPage = () => {
       <div className="workdone">
         <div
           className="wow animated zoomIn workdone__inner"
-          data-wow-delay="5s"
+          data-wow-delay="3s"
           data-wow-duration="1.9s"
         >
           <h3>Select a Project</h3>
@@ -39,7 +94,10 @@ const AppLandingPage = () => {
                 <div className="workdone__name">Desperate Escort</div>
               </Col>
               <Col xs={12} xl={8} lg={6}>
-                <Link to="/freelancer/welcome" className="workdone__eachSection">
+                <Link
+                  to="/freelancer/welcome"
+                  className="workdone__eachSection"
+                >
                   <div>F.R</div>
                 </Link>
                 <div className="workdone__name">Freelancer</div>
@@ -51,7 +109,10 @@ const AppLandingPage = () => {
                 <div className="workdone__name">The Connect</div>
               </Col>
               <Col xs={12} xl={8} lg={6}>
-                <Link to="/cod-extended/welcome" className="workdone__eachSection">
+                <Link
+                  to="/cod-extended/welcome"
+                  className="workdone__eachSection"
+                >
                   <div>C.D</div>
                 </Link>
                 <div className="workdone__name">Call of Duty</div>
@@ -61,6 +122,12 @@ const AppLandingPage = () => {
                   <div>M.N</div>
                 </Link>
                 <div className="workdone__name">Movers NG</div>
+              </Col>
+              <Col xs={12} xl={8} lg={6}>
+                <Link to="/test" className="workdone__eachSection">
+                  <div>T.S</div>
+                </Link>
+                <div className="workdone__name">Test Only</div>
               </Col>
             </Row>
           </div>
@@ -91,10 +158,32 @@ const AppLandingPage = () => {
       </div>
       <div
         className={`entrypage__slideLeft leftCol ${hover ? "hoverLeft" : ""}`}
-      />
+      >
+        <AppParticles />
+      </div>
       <div
         className={`entrypage__slideLeft rightCol ${hover ? "hoverRight" : ""}`}
-      />
+      >
+        <AppParticles settings={particleSettings} />
+      </div>
+      <div
+        className="author wow animated slideInRight"
+        data-wow-delay="3s"
+        data-wow-duration="1.9s"
+      >
+        <div className="author__developer">
+          <AppCardFlip
+            fullname="Temitope Falua"
+            role="Frontend Developer"
+            slogan="an avid learner and motivator"
+            picture="https://res.cloudinary.com/emmathem-media-company/image/upload/v1619566383/frontend-picture_e8bcqj.jpg"
+            profilelink='"https://www.linkedin.com/in/faluatemitopeo/'
+          />
+        </div>
+        <div className="author__developer">
+          <AppCardFlip fullname="Gbolayo Olawumi" role="UI/UX Developer" />
+        </div>
+      </div>
     </div>
   );
 };

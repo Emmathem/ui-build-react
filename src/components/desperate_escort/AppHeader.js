@@ -10,7 +10,6 @@ const AppHeader = () => {
         <div>
           <Link to="/">
             <HomeIcon size="large" style={{ color: "#fff" }} /> 
-            {/* <span>Home</span> */}
           </Link>
         </div>
         <div>

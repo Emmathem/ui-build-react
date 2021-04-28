@@ -3,6 +3,7 @@ import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import "../../assets/css/mover.css";
 import MoverLogo from "../../assets/images/delivery-truck.png";
+import AppBackHome from "../AppBackHome";
 
 const AppMoverHeader = () => {
     let history = useHistory();
@@ -20,6 +21,9 @@ const AppMoverHeader = () => {
       <div className="moverheader__col">
         <div className="moverheader__nav">
           <ul>
+            <li>
+              <AppBackHome color="#fff" />
+            </li>
             <li>
               <Link>About</Link>
             </li>
