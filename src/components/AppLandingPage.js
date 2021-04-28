@@ -177,7 +177,7 @@ const AppLandingPage = () => {
             role="Frontend Developer"
             slogan="an avid learner and motivator"
             picture="https://res.cloudinary.com/emmathem-media-company/image/upload/v1619566383/frontend-picture_e8bcqj.jpg"
-            profilelink='"https://www.linkedin.com/in/faluatemitopeo/'
+            profilelink="https://www.linkedin.com/in/faluatemitopeo/"
           />
         </div>
         <div className="author__developer">
