@@ -315,5 +315,10 @@
     .author__developer {
         height: 100px;
         width: 75px;
+        &__developer {
+            h3 {
+                font-size: .71rem;
+            }
+        }
     }
 }

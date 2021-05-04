@@ -7,6 +7,7 @@
         justify-content: center;
         padding: 4em 0;
     }
+
     .landing {
         &__bgCover {
             background: url("../images/tender-young-blonde.jpg") no-repeat;
@@ -49,6 +50,7 @@
             width: 60%;
         }
     }
+
     .register {
         max-width: 100%;
         padding: 3em 25px;
@@ -59,10 +61,12 @@
         left: 0;
         right: 0;
         background-color: rgba(0, 0, 0, 0.42);
+
         &__mobile {
             // border: 1px solid yellow;
             margin-top: 6em;
             transition: ease all 0.54s;
+
             h3 {
                 color: $white-color;
                 font-family: 'Roboto-Bold';
@@ -71,85 +75,104 @@
                 font-size: 2em;
             }
         }
+
         &__mp {
             margin-top: 15px;
             margin-left: 15px;
             // display: flex;
             // justify-content: space-around;
         }
+
         &__mobileFormContent {
             margin: 30px 0 10px 0;
         }
+
         .ant-input-affix-wrapper {
-            background-color: rgba(0,0,0,.58);
+            background-color: rgba(0, 0, 0, .58);
             border-radius: 5px;
             color: #fff;
             padding: 10px;
             border: none;
         }
+
         .ant-input {
             background-color: transparent;
             border-radius: 5px;
             height: 30px;
-            padding: 4px 10px;;
+            padding: 4px 10px;
+            ;
             border: none;
             color: $white-color;
+
             &:focus {
                 border: none;
                 border-bottom: 1px solid $white-color;
             }
         }
-        .ant-input-prefix{
+
+        .ant-input-prefix {
             background-color: transparent;
             border-right: 1px solid $white-color;
             color: $white-color;
             padding: 3px 14px;
         }
+
         .ant-input-suffix {
             color: $white-color;
         }
+
         .ant-btn-primary {
             background: $primaryButton;
             border-color: $primaryButton;
             height: 40px;
         }
+
         &__formgroup {
             margin-bottom: 15px;
         }
+
         &__twitter {
             @include SocialButton($white-color, $twitter, 40px, 40px, 100%);
         }
+
         &__facebook {
             @include SocialButton($white-color, $facebook, 40px, 40px, 100%);
         }
+
         &__googleplus {
             @include SocialButton($white-color, $google, 40px, 40px, 100%);
         }
+
         .ant-divider {
             color: $white-color !important;
             border-top: $white-color !important;
         }
     }
+
     .connect {
         transform: ease all 0.5s;
+
         &__content {
+
             // border: 1px solid $freelanceColor;
             &__header {
                 margin-bottom: 2rem;
             }
-            &__innerheader {    
+
+            &__innerheader {
                 h2 {
                     font-size: 3rem;
                 }
             }
-    
+
             p {
                 font-size: 1.2rem;
             }
-    
+
             &__actions {
                 margin-top: 10px;
                 width: 80%;
+
                 .button {
                     padding: 10px 15px;
                     display: flex;
@@ -160,11 +183,26 @@
                     margin-bottom: 15px;
                 }
             }
+
             &__store {
                 margin-top: 10rem;
             }
         }
     }
+
+    .flip {
+        &__cardback {
+            padding: 5px;
+            small {
+                font-size: 30%;
+            }
+        }
+
+        i {
+            font-size: 40%;
+        }
+    }
+
     .hideOnMobile {
         display: none;
     }

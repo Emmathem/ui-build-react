@@ -37,9 +37,7 @@ const AppMoverHeader = () => {
               <Link>Plans</Link>
             </li>
             <li>
-              <Link>
                 <Button variant="contained" color="primary">JOIN US</Button>
-              </Link>
             </li>
           </ul>
         </div>
