@@ -6,10 +6,10 @@ import MoverLogo from "../../assets/images/delivery-truck.png";
 import AppBackHome from "../AppBackHome";
 
 const AppMoverHeader = () => {
-    let history = useHistory();
-    const returnHome = () => {
-        history.push('/moversng');
-    };
+  let history = useHistory();
+  const returnHome = () => {
+    history.push("/moversng");
+  };
   return (
     <div className="moverheader">
       <div className="moverheader__col">
@@ -37,7 +37,12 @@ const AppMoverHeader = () => {
               <Link>Plans</Link>
             </li>
             <li>
-                <Button variant="contained" color="primary">JOIN US</Button>
+              <Link to="/movers-ng/dashboard/login">Login</Link>
+            </li>
+            <li>
+              <Button variant="contained" color="primary">
+                JOIN US
+              </Button>
             </li>
           </ul>
         </div>

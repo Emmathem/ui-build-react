@@ -11,6 +11,8 @@ import AppMoverLandingPage from "./components/mover_ng/AppMoverLandingPage";
 import AppMoversRequestDetails from "./components/mover_ng/AppMoversRequestDetails";
 import AppMoversPayment from "./components/mover_ng/AppMoversPayment";
 import TestScript from "./components/TestScript";
+import AppMoverLogin from "./components/mover_ng/dashboard/AppMoverLogin";
+import AppDashboard from "./components/mover_ng/dashboard/AppDashboard";
 
 const App = () => {
   return (
@@ -33,9 +35,11 @@ const App = () => {
             component={AppMoversRequestDetails}
           />
           <Route
-            path="/moversng/request/payment"
+            path="/movers-ng/request/payment"
             component={AppMoversPayment}
           />
+          <Route path="/movers-ng/dashboard/login" component={AppMoverLogin} />
+          <Route path="/movers-ng/dashboard" component={AppDashboard} />
           <Route path="/test" component={TestScript} />
         </Switch>
       </Router>

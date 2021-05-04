@@ -59,3 +59,7 @@
     right: 0;
     opacity: $opacity;
 }
+
+@mixin formGroup($bottom) {
+    margin-bottom: $bottom;
+}
