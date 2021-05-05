@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
+import { Helmet } from "react-helmet";
+import AppDashboardHeader from "./AppDashboardHeader";
+import AppDashboardSidebar from "./AppDashboardSidebar";
 
 const AppDashboard = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return (
+    <div className="dashboard">
+      <Helmet>
+        <title>Dashboard | MoversNG</title>
+      </Helmet>
+      <AppDashboardHeader />
+      <AppDashboardSidebar />
+      <main></main>
+    </div>
+  );
+};
 
-export default AppDashboard
+export default AppDashboard;

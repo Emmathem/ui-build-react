@@ -16,7 +16,6 @@ const AppMoverLogin = () => {
   };
   const loadingButton = () => setLoading(!loading);
   const onLogin = (data) => {
-    // e.preventDefault();
     loadingButton();
     console.log("data", JSON.stringify(data));
     setTimeout(() => {

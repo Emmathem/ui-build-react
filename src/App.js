@@ -14,7 +14,8 @@ import TestScript from "./components/TestScript";
 import AppMoverLogin from "./components/mover_ng/dashboard/AppMoverLogin";
 import AppDashboard from "./components/mover_ng/dashboard/AppDashboard";
 
-const App = () => {
+const App = (props) => {
+  console.log('all', props);
   return (
     <div className="">
       <Router>
