@@ -1,9 +1,11 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import AppDashboardHeader from "./AppDashboardHeader";
-import AppDashboardSidebar from "./AppDashboardSidebar";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import AppDashboardHeader from './AppDashboardHeader';
+import AppDashboardSidebar from './AppDashboardSidebar';
+import { LOGGER } from '../../../utils/miscelleous';
 
-const AppDashboard = () => {
+const AppDashboard = props => {
+  LOGGER('p', props);
   return (
     <div className="dashboard">
       <Helmet>
@@ -11,7 +13,7 @@ const AppDashboard = () => {
       </Helmet>
       <AppDashboardHeader />
       <AppDashboardSidebar />
-      <main></main>
+      <main>d</main>
     </div>
   );
 };

@@ -86,7 +86,7 @@
         align-items: center;
         // justify-content: center;
         cursor: pointer;
-        margin-left: 3rem;
+        margin-left: 4rem;
 
         img {
             object-fit: contain;
@@ -146,11 +146,33 @@
         margin: 8px 0 0 0;
         justify-content: center;
         cursor: pointer;
+        color: $white-color;
 
         img {
             object-fit: contain;
             height: 100%;
             width: 100%;
+        }
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3rem 0 0 0;
+        transition: ease all 0.5s;
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+        li a {
+            color: $iconColor;
+            padding-bottom: 2.2rem;
+            display: flex;
+            transition: ease all 0.5s;
         }
     }
 
@@ -174,8 +196,10 @@
             padding: 0;
         }
 
-        li a {
-            color: $white-color;
+        li, a {
+            cursor: pointer;
+            color: $iconColor;
+            display: flex;
             padding: 10px 0;
         }
     }
@@ -185,4 +209,17 @@
     display: flex;
     background-color: $dashBgColor;
     height: 100vh;
+}
+
+// light style
+.light {
+    background: $dashLightBgColor;
+    color: $black-color;
+    transition: ease all 0.5s;
+    h3 {
+        color: $black-color;
+    }
+    li, span {
+        color: $black-color;
+    }
 }

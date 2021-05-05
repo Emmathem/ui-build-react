@@ -1,12 +1,13 @@
-import React from "react";
-import ConnectIcon from "../../assets/images/connectColorIcon.png";
-import { Input, Space } from "antd";
-import { Link } from "react-router-dom";
-import HomeIcon from "@material-ui/icons/Home";
+import React from 'react';
+import ConnectIcon from '../../assets/images/connectColorIcon.png';
+import { Input, Space } from 'antd';
+import { Link } from 'react-router-dom';
+import HomeIcon from '@material-ui/icons/Home';
+import { LOGGER } from '../../utils/miscelleous';
 const { Search } = Input;
 
 const AppConnetHeader = () => {
-  const onSearch = (value) => console.log(value);
+  const onSearch = value => LOGGER('value', value);
   return (
     <nav className="connectHeader hideOnMobile">
       <div>
@@ -16,7 +17,7 @@ const AppConnetHeader = () => {
         <Link to="/">
           <HomeIcon
             size="large"
-            style={{ color: "#fff", marginLeft: "10px" }}
+            style={{ color: '#fff', marginLeft: '10px' }}
           />
           {/* <span>Home</span> */}
         </Link>

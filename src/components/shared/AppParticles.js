@@ -1,5 +1,6 @@
-import React from "react";
-import Particles from "react-particles-js";
+import React from 'react';
+import Particles from 'react-particles-js';
+import { LOGGER } from '../../utils/miscelleous';
 
 const AppParticles = ({ settings }) => {
   // link ref https://rpj.bembi.org/#night-sky
@@ -17,30 +18,30 @@ const AppParticles = ({ settings }) => {
       },
       move: {
         speed: 1,
-        out_mode: "out",
+        out_mode: 'out',
       },
       shape: {
-        type: ["image", "circle"],
+        type: ['image', 'circle'],
         image: [
           {
-            src: "/react.cd2ab268.svg",
+            src: '/react.cd2ab268.svg',
             height: 20,
             width: 23,
           },
           {
-            src: "/k8s.2d579d24.svg",
+            src: '/k8s.2d579d24.svg',
             height: 20,
             width: 20,
           },
           {
-            src: "/code.b3b4c4f4.png",
+            src: '/code.b3b4c4f4.png',
             height: 20,
             width: 20,
           },
         ],
       },
       color: {
-        value: "#CCC",
+        value: '#CCC',
       },
       size: {
         value: 30,
@@ -55,7 +56,7 @@ const AppParticles = ({ settings }) => {
     },
     retina_detect: false,
   };
-  console.log("se", settings);
+  LOGGER('se', settings);
   return (
     <Particles
       params={{
@@ -72,30 +73,30 @@ const AppParticles = ({ settings }) => {
           },
           move: {
             speed: 1,
-            out_mode: "out",
+            out_mode: 'out',
           },
           shape: {
-            type: ["image", "circle"],
+            type: ['image', 'circle'],
             image: [
               {
-                src: "/react.cd2ab268.svg",
+                src: '/react.cd2ab268.svg',
                 height: 20,
                 width: 23,
               },
               {
-                src: "/k8s.2d579d24.svg",
+                src: '/k8s.2d579d24.svg',
                 height: 20,
                 width: 20,
               },
               {
-                src: "/code.b3b4c4f4.png",
+                src: '/code.b3b4c4f4.png',
                 height: 20,
                 width: 20,
               },
             ],
           },
           color: {
-            value: "#CCC",
+            value: '#CCC',
           },
           size: {
             value: 30,

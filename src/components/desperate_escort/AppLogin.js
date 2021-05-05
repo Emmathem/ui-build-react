@@ -1,13 +1,13 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
-import TwitterLogo from "../../assets/images/twitter.svg";
-import GooglePlus from "../../assets/images/googlePlus.svg";
-import FacebookLogo from "../../assets/images/facebook.svg";
-import { Row, Col, Input, Divider, Button } from "antd";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
-import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
-import AppHeader from "./AppHeader";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
+import TwitterLogo from '../../assets/images/twitter.svg';
+import GooglePlus from '../../assets/images/googlePlus.svg';
+import FacebookLogo from '../../assets/images/facebook.svg';
+import { Row, Col, Input, Divider, Button } from 'antd';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import AppHeader from './AppHeader';
 
 const AppLogin = () => {
   return (
@@ -73,7 +73,7 @@ const AppLogin = () => {
                   </Col>
                 </Row>
                 <div className="login__info2">
-                  <span>Already Have an Account?</span>{" "}
+                  <span>Already Have an Account?</span>{' '}
                   <Link to="/register" className="btnColor">
                     Sign Up Here
                   </Link>

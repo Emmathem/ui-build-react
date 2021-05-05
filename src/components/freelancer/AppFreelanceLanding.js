@@ -1,9 +1,9 @@
-import { Button, Select } from "antd";
-import React from "react";
-import { Helmet } from "react-helmet";
-import "../../assets/css/freelancer.css";
-import MobileBg from "../../assets/images/handsome-man-with-laptop.png";
-import AppHeader from "./AppHeader";
+import { Button, Select } from 'antd';
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import '../../assets/css/freelancer.css';
+import MobileBg from '../../assets/images/handsome-man-with-laptop.png';
+import AppHeader from './AppHeader';
 const { Option } = Select;
 
 const AppFreelanceLanding = () => {

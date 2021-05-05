@@ -1,14 +1,14 @@
-import { Button } from "@material-ui/core";
-import React from "react";
-import { Link, useHistory } from "react-router-dom";
-import "../../assets/css/mover.css";
-import MoverLogo from "../../assets/images/delivery-truck.png";
-import AppBackHome from "../AppBackHome";
+import React from 'react';
+import { Link, useHistory } from 'react-router-dom';
+import '../../assets/css/mover.css';
+import MoverLogo from '../../assets/images/delivery-truck.png';
+import AppBackHome from '../AppBackHome';
+import { Button } from '@material-ui/core';
 
 const AppMoverHeader = () => {
   let history = useHistory();
   const returnHome = () => {
-    history.push("/moversng");
+    history.push('/moversng');
   };
   return (
     <div className="moverheader">

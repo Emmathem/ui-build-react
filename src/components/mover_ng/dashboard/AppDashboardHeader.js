@@ -1,10 +1,8 @@
-import React, { useState } from "react";
-// import { Row, Col } from "antd";
-import { Switch } from "@material-ui/core";
-import { Notifications, ExitToApp } from "@material-ui/icons";
-import MoverLogo from "../../../assets/images/delivery-truck.png";
-import AppLogonUser from "../../shared/AppLogonUser";
-// import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Switch } from '@material-ui/core';
+import { Notifications } from '@material-ui/icons';
+import MoverLogo from '../../../assets/images/delivery-truck.png';
+import AppLogonUser from '../../shared/AppLogonUser';
 
 const AppDashboardHeader = () => {
   const [state, setState] = useState({
@@ -12,12 +10,12 @@ const AppDashboardHeader = () => {
     checkedB: true,
   });
 
-  const handleChange = (event) => {
+  const handleChange = event => {
     setState({ ...state, [event.target.name]: event.target.checked });
   };
 
   return (
-    <header className="dheader">
+    <header className={`dheader ${!state.themeBlack ? 'light' : ''}`}>
       <div className="dheader__col">
         <div className="dheader__logo">
           <img src={MoverLogo} alt="logo" />
@@ -29,12 +27,10 @@ const AppDashboardHeader = () => {
           <ul>
             <li>
               <Switch
-                checked={state.checkedA}
+                checked={state.themeBlack}
                 onChange={handleChange}
                 name="themeBlack"
-                defaultChecked
                 color="primary"
-                inputProps={{ "aria-label": "checkbox with default color" }}
               />
             </li>
             <li>
@@ -44,11 +40,12 @@ const AppDashboardHeader = () => {
               <AppLogonUser
                 userImage="https://res.cloudinary.com/emmathem-media-company/image/upload/v1619566383/frontend-picture_e8bcqj.jpg"
                 username="Temitope Falua"
+                theme={state.themeBlack}
               />
             </li>
-            <li style={{ display: "flex", alignItems: "center" }}>
+            {/* <li style={{ display: "flex", alignItems: "center" }}>
               <ExitToApp />
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

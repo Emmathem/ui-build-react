@@ -1,6 +1,11 @@
 import WOW from 'wowjs';
 
-const useWow = () => {
+export const LOGGER = (key, value) => {
+  // eslint-disable-next-line no-console
+  console.log(key, value);
+};
+
+export const useWOW = () => {
   const initWow = () => {
     const wow = new WOW.WOW({
       boxClass: 'wow',
@@ -12,8 +17,5 @@ const useWow = () => {
     });
     wow.init();
   };
-
   return { initWow };
 };
-
-export default useWow;

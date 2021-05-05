@@ -1,15 +1,15 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import AppMoverHeader from "./AppMoverHeader";
-import "../../assets/css/mover.css";
-import Boxes from "../../assets/images/boxes.png";
-import DeliveryMan from "../../assets/images/delivery-man.png";
-import DeliverTruck from "../../assets/images/delivery-truck-1.png";
-import SmallVehicle from "../../assets/images/Icon.png";
-import MediumVehicle from "../../assets/images/Icon-1.png";
-import LargeVehicle from "../../assets/images/Icon-2.png";
-import { Col, Input, Row } from "antd";
-import { Button } from "@material-ui/core";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import AppMoverHeader from './AppMoverHeader';
+import '../../assets/css/mover.css';
+import Boxes from '../../assets/images/boxes.png';
+import DeliveryMan from '../../assets/images/delivery-man.png';
+import DeliverTruck from '../../assets/images/delivery-truck-1.png';
+import SmallVehicle from '../../assets/images/Icon.png';
+import MediumVehicle from '../../assets/images/Icon-1.png';
+import LargeVehicle from '../../assets/images/Icon-2.png';
+import { Col, Input, Row } from 'antd';
+import { Button } from '@material-ui/core';
 
 const AppMoversRequestDetails = () => {
   return (
@@ -119,11 +119,19 @@ const AppMoversRequestDetails = () => {
                 </div>
               </div>
               <Row>
-                  <Col span="24"><Button variant="contained" fullWidth>BOOK NOW</Button></Col>
+                <Col span="24">
+                  <Button variant="contained" fullWidth>
+                    BOOK NOW
+                  </Button>
+                </Col>
               </Row>
               <br />
               <Row>
-                  <Col span="24"><Button variant="contained" color="secondary"  fullWidth>BOOK LATER</Button></Col>
+                <Col span="24">
+                  <Button variant="contained" color="secondary" fullWidth>
+                    BOOK LATER
+                  </Button>
+                </Col>
               </Row>
             </div>
           </div>

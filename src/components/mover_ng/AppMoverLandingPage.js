@@ -1,9 +1,9 @@
-import { Button } from "@material-ui/core";
-import { Col, Input, Row } from "antd";
-import React from "react";
-import { Helmet } from "react-helmet";
-import { useHistory } from "react-router-dom";
-import AppMoverHeader from "./AppMoverHeader";
+import { Button } from '@material-ui/core';
+import { Col, Input, Row } from 'antd';
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { useHistory } from 'react-router-dom';
+import AppMoverHeader from './AppMoverHeader';
 
 const AppMoverLandingPage = () => {
   const history = useHistory();
@@ -52,7 +52,12 @@ const AppMoverLandingPage = () => {
               </Row>
               <Row>
                 <Col span="24">
-                  <Button variant="contained" color="primary" fullWidth onClick={onRequest}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    fullWidth
+                    onClick={onRequest}
+                  >
                     GET OUR SERVICE
                   </Button>
                 </Col>

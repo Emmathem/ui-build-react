@@ -1,12 +1,12 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { useHistory } from "react-router";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { useHistory } from 'react-router';
 // import { Link } from "react-router-dom";
 
 const AppWelcome = () => {
   const history = useHistory();
   const gotoNext = () => {
-    history.push("/register");
+    history.push('/register');
   };
   return (
     <div>

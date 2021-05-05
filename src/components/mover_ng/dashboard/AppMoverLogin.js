@@ -1,26 +1,50 @@
-import { Row, Col, Card, Input, Button, Divider } from "antd";
-import { UserOutlined, LockOutlined, LoginOutlined } from "@ant-design/icons";
-import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
-import "../../../assets/css/moverdash.css";
-import MoverLogo from "../../../assets/images/delivery-truck.png";
-import { Helmet } from "react-helmet";
-import { useForm } from "react-hook-form";
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import '../../../assets/css/moverdash.css';
+import MoverLogo from '../../../assets/images/delivery-truck.png';
+import { Helmet } from 'react-helmet';
+import { useForm } from 'react-hook-form';
+import { Row, Col, Card, Input, Button, Divider, notification } from 'antd';
+import { UserOutlined, LockOutlined, LoginOutlined } from '@ant-design/icons';
+import { LOGGER } from '../../../utils/miscelleous';
 
 const AppMoverLogin = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
   let history = useHistory();
   const [loading, setLoading] = useState(false);
   const returnHome = () => {
-    history.push("/moversng");
+    history.push('/moversng');
+  };
+  // Default logon user details
+  const adminDetails = {
+    username: 'Admin',
+    password: 'admin123',
   };
   const loadingButton = () => setLoading(!loading);
-  const onLogin = (data) => {
+  const onLogin = data => {
     loadingButton();
-    console.log("data", JSON.stringify(data));
+    LOGGER('data', JSON.stringify(data));
+    if (
+      adminDetails.username !== data.username &&
+      adminDetails.password !== data.password
+    ) {
+      notification.error({
+        key: 'loginAlert',
+        message: 'Error',
+        description: 'Incorrect Login Details, Try again or Contact the Admin',
+        duration: 0,
+      });
+      setLoading(false);
+      return;
+    }
     setTimeout(() => {
       setLoading(loading);
-      history.push("/movers-ng/dashboard");
+      notification.close('loginAlert');
+      history.push('/movers-ng/dashboard');
     }, 5000);
   };
 
@@ -38,24 +62,28 @@ const AppMoverLogin = () => {
                   <img src={MoverLogo} alt="logo" />
                 </div>
                 <h4>Welcome Back</h4>
-                <div className="form-group">
-                  <Input
-                    prefix={<UserOutlined />}
-                    size="large"
-                    placeholder="Username"
-                    { ...register("username", { required: true })}
-                  />
-                  {errors.username && <span className="error">This field is required</span>}
-                </div>
                 <form onSubmit={onLogin}>
+                  <div className="form-group">
+                    <Input
+                      prefix={<UserOutlined />}
+                      size="large"
+                      placeholder="Username"
+                      {...register('username', { required: true })}
+                    />
+                    {errors.username && (
+                      <span className="error">This field is required</span>
+                    )}
+                  </div>
                   <div className="form-group">
                     <Input.Password
                       size="large"
                       prefix={<LockOutlined />}
                       placeholder="Password"
-                      { ...register("password", { required: true }) }
+                      {...register('password', { required: true })}
                     />
-                    {errors.password && <span className="error">This field is required</span>}
+                    {errors.password && (
+                      <span className="error">This field is required</span>
+                    )}
                   </div>
                   <div>
                     <Button

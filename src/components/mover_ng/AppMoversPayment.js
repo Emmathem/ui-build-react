@@ -1,7 +1,7 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import AppMoverHeader from "./AppMoverHeader";
-import "../../assets/css/mover.css";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import AppMoverHeader from './AppMoverHeader';
+import '../../assets/css/mover.css';
 
 const AppMoversPayment = () => {
   return (

@@ -1,20 +1,21 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
-import TwitterLogo from "../../assets/images/twitter.svg";
-import GooglePlus from "../../assets/images/googlePlus.svg";
-import FacebookLogo from "../../assets/images/facebook.svg";
-import { Row, Col, Input, Select, Divider, Button } from "antd";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
-import PersonOutlinedIcon from "@material-ui/icons/PersonOutlined";
-import PhoneOutlinedIcon from "@material-ui/icons/PhoneOutlined";
-import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
-import AppHeader from "./AppHeader";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
+import TwitterLogo from '../../assets/images/twitter.svg';
+import GooglePlus from '../../assets/images/googlePlus.svg';
+import FacebookLogo from '../../assets/images/facebook.svg';
+import { Row, Col, Input, Select, Divider, Button } from 'antd';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import PersonOutlinedIcon from '@material-ui/icons/PersonOutlined';
+import PhoneOutlinedIcon from '@material-ui/icons/PhoneOutlined';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import AppHeader from './AppHeader';
+import { LOGGER } from '../../utils/miscelleous';
 const { Option } = Select;
 
 const AppRegister = () => {
-  const handleChange = (value) => {
-    console.log(`selected ${value}`);
+  const handleChange = value => {
+    LOGGER(`selected`, value);
   };
   return (
     <div className="landing">
@@ -114,7 +115,7 @@ const AppRegister = () => {
                   </Col>
                 </Row>
                 <div className="register__existing">
-                  Already Have an Account?{" "}
+                  Already Have an Account?{' '}
                   <Link to="/login" className="btnColor">
                     Sign in
                   </Link>

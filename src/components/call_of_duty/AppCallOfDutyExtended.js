@@ -1,12 +1,12 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import AppCODHeader from "./AppCODHeader";
-import "../../assets/css/cod.css";
-import ComputerIcon from "@material-ui/icons/Computer";
-import { Button } from "antd";
-import { AutoRotatingCarousel } from "material-auto-rotating-carousel";
-import NewCode from "../../assets/images/the-new-cod.png";
-import Slide from "@material-ui/core/Slide";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import AppCODHeader from './AppCODHeader';
+import '../../assets/css/cod.css';
+import ComputerIcon from '@material-ui/icons/Computer';
+import { Button } from 'antd';
+import { AutoRotatingCarousel } from 'material-auto-rotating-carousel';
+import NewCode from '../../assets/images/the-new-cod.png';
+import Slide from '@material-ui/core/Slide';
 // const Slide = require('./Slide').default;
 
 const AppCallOfDutyExtended = () => {
@@ -38,7 +38,7 @@ const AppCallOfDutyExtended = () => {
                 <h2 className="codColor">CALL OF DUTY</h2>
                 <h3>EXTENDED</h3>
                 <p className="codExtended__content__span1">
-                  <ComputerIcon style={{ marginRight: "16px" }} /> PC
+                  <ComputerIcon style={{ marginRight: '16px' }} /> PC
                   REQUIREMENTS
                 </p>
                 <p className="codExtended__content__span1">
@@ -53,7 +53,7 @@ const AppCallOfDutyExtended = () => {
             <div className="codExtended__inner__col">
               <div className="codExtended__slideshow">
                 <h2>Slide</h2>
-                <AutoRotatingCarousel label='Get started'>
+                <AutoRotatingCarousel label="Get started">
                   <Slide
                     media={<img src={NewCode} alt="slide1" />}
                     title="This is a very cool feature"

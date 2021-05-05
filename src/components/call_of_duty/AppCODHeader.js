@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import MenuCOD from "../../assets/images/codMenu.svg";
-import CODIcon from "../../assets/images/codLogo.png";
-import SearchIcon from "@material-ui/icons/Search";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import MenuCOD from '../../assets/images/codMenu.svg';
+import CODIcon from '../../assets/images/codLogo.png';
+import SearchIcon from '@material-ui/icons/Search';
 
 const AppCODHeader = () => {
   return (
@@ -19,7 +19,9 @@ const AppCODHeader = () => {
             <Link to="">Products</Link>
           </li>
           <li>
-            <Link to="" className="other">Signup Now</Link>
+            <Link to="" className="other">
+              Signup Now
+            </Link>
           </li>
           <li>
             <Link to="">

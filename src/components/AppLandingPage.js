@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import "../assets/css/entry.css";
-import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
-import LockOpenOutlinedIcon from "@material-ui/icons/LockOpenOutlined";
-import { Row, Col } from "antd";
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
-import AppParticles from "./shared/AppParticles";
-import AppCardFlip from "./shared/AppCardFlip";
+import React, { useState } from 'react';
+import '../assets/css/entry.css';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import LockOpenOutlinedIcon from '@material-ui/icons/LockOpenOutlined';
+import { Row, Col } from 'antd';
+import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import AppParticles from './shared/AppParticles';
+import AppCardFlip from './shared/AppCardFlip';
 
 const AppLandingPage = () => {
   const [hover, setIsHover] = useState(false);
@@ -29,30 +29,30 @@ const AppLandingPage = () => {
       },
       move: {
         speed: 1,
-        out_mode: "out",
+        out_mode: 'out',
       },
       shape: {
-        type: ["image", "circle"],
+        type: ['image', 'circle'],
         image: [
           {
-            src: "/react.cd2ab268.svg",
+            src: '/react.cd2ab268.svg',
             height: 20,
             width: 23,
           },
           {
-            src: "/k8s.2d579d24.svg",
+            src: '/k8s.2d579d24.svg',
             height: 20,
             width: 20,
           },
           {
-            src: "/code.b3b4c4f4.png",
+            src: '/code.b3b4c4f4.png',
             height: 20,
             width: 20,
           },
         ],
       },
       color: {
-        value: "#CCC",
+        value: '#CCC',
       },
       size: {
         value: 30,
@@ -135,39 +135,39 @@ const AppLandingPage = () => {
       </div>
       <div
         className={`wow animated slideInDown entrypage__welcome ${
-          hover ? "slideDown" : ""
+          hover ? 'slideDown' : ''
         }`}
       >
         <h4>Welcome to My Portfolio</h4>
       </div>
       <div
-        className={`entrypage__lock ${hover ? "slideDown" : ""}`}
+        className={`entrypage__lock ${hover ? 'slideDown' : ''}`}
         onClick={openMenuPage}
       >
         {!hover ? (
           <LockOutlinedIcon
-            style={{ fontSize: "5em" }}
+            style={{ fontSize: '5em' }}
             className="entrypage__icon"
           />
         ) : (
           <LockOpenOutlinedIcon
-            style={{ fontSize: "5em" }}
+            style={{ fontSize: '5em' }}
             className="__icon"
           />
         )}
       </div>
       <div
-        className={`entrypage__slideLeft leftCol ${hover ? "hoverLeft" : ""}`}
+        className={`entrypage__slideLeft leftCol ${hover ? 'hoverLeft' : ''}`}
       >
         <AppParticles />
       </div>
       <div
-        className={`entrypage__slideLeft rightCol ${hover ? "hoverRight" : ""}`}
+        className={`entrypage__slideLeft rightCol ${hover ? 'hoverRight' : ''}`}
       >
         <AppParticles settings={particleSettings} />
       </div>
       <div
-        className={`author wow animated slideInRight ${hover ? "open" : ""}`}
+        className={`author wow animated slideInRight ${hover ? 'open' : ''}`}
         data-wow-delay="1.9s"
         data-wow-duration="3s"
       >

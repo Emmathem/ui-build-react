@@ -1,11 +1,11 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import AppConnetHeader from "./AppConnetHeader";
-import ConnectLogo from "../../assets/images/connectIcon.svg";
-import StoreImage from "../../assets/images/store_image.png";
-import { Button, Col, Row } from "antd";
-import { Link } from "react-router-dom";
-import HomeIcon from "@material-ui/icons/Home";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import AppConnetHeader from './AppConnetHeader';
+import ConnectLogo from '../../assets/images/connectIcon.svg';
+import StoreImage from '../../assets/images/store_image.png';
+import { Button, Col, Row } from 'antd';
+import { Link } from 'react-router-dom';
+import HomeIcon from '@material-ui/icons/Home';
 
 const AppConnectHome = () => {
   return (
@@ -19,7 +19,7 @@ const AppConnectHome = () => {
         <div className="connect__content">
           <div className="connect__content__header">
             <div className="connect__content__innerheader">
-              <img src={ConnectLogo} alt={"logo"} />
+              <img src={ConnectLogo} alt={'logo'} />
               <h2>Connect</h2>
             </div>
             <p>
@@ -50,10 +50,7 @@ const AppConnectHome = () => {
         </div>
         <div className="connect__mobileicon hideOnWeb">
           <Link to="/">
-            <HomeIcon
-              size="large"
-              style={{ color: "#fff" }}
-            />
+            <HomeIcon size="large" style={{ color: '#fff' }} />
             {/* <span>Home</span> */}
           </Link>
         </div>

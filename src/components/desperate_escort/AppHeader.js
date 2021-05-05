@@ -1,7 +1,7 @@
-import React from "react";
-import Logo from "../../assets/images/Logo.svg";
-import { Link } from "react-router-dom";
-import HomeIcon from "@material-ui/icons/Home";
+import React from 'react';
+import Logo from '../../assets/images/Logo.svg';
+import { Link } from 'react-router-dom';
+import HomeIcon from '@material-ui/icons/Home';
 
 const AppHeader = () => {
   return (
@@ -9,7 +9,7 @@ const AppHeader = () => {
       <div className="header__logo">
         <div>
           <Link to="/">
-            <HomeIcon size="large" style={{ color: "#fff" }} /> 
+            <HomeIcon size="large" style={{ color: '#fff' }} />
           </Link>
         </div>
         <div>

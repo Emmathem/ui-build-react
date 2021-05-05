@@ -1,8 +1,8 @@
-import { Button } from "antd";
-import React from "react";
-import { Link } from "react-router-dom";
-import HomeIcon from "@material-ui/icons/Home";
-import mobileMenu from "../../assets/images/menu.svg";
+import { Button } from 'antd';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import HomeIcon from '@material-ui/icons/Home';
+import mobileMenu from '../../assets/images/menu.svg';
 
 const AppHeader = () => {
   return (
@@ -16,7 +16,7 @@ const AppHeader = () => {
             <ul>
               <li>
                 <Link to="/">
-                  <HomeIcon size="large" style={{ color: "#000" }} />
+                  <HomeIcon size="large" style={{ color: '#000' }} />
                   {/* <span>Home</span> */}
                 </Link>
               </li>
