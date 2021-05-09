@@ -14,6 +14,7 @@ import TestScript from './components/TestScript';
 import AppMoverLogin from './components/mover_ng/dashboard/AppMoverLogin';
 import AppDashboard from './components/mover_ng/dashboard/AppDashboard';
 import { LOGGER } from './utils/miscelleous';
+import AppManageUsers from './components/mover_ng/dashboard/AppManageUsers';
 
 const App = props => {
   LOGGER('all', props);
@@ -27,11 +28,14 @@ const App = props => {
         <Route path="/freelancer/welcome" component={AppFreelanceLanding} />
         <Route path="/connect/welcome" component={AppConnectHome} />
         <Route path="/cod-extended/welcome" component={AppCallOfDutyExtended} />
+
+        {/* MoversNG Routes */}
         <Route path="/moversng" component={AppMoverLandingPage} />
         <Route path="/movers-ng/request" component={AppMoversRequestDetails} />
         <Route path="/movers-ng/request/payment" component={AppMoversPayment} />
         <Route path="/movers-ng/dashboard/login" component={AppMoverLogin} />
         <Route path="/movers-ng/dashboard" component={AppDashboard} />
+        <Route path="/movers-ng/manage-users" component={AppManageUsers} />
         <Route path="/test" component={TestScript} />
       </Switch>
     </Router>

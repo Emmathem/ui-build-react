@@ -116,6 +116,7 @@
             margin: 0;
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             align-items: center;
         }
 
@@ -205,10 +206,78 @@
     }
 }
 
+main {
+    position: relative;
+    width: 100%;
+    margin: 75px 15px 15px;
+    transition: ease all 0.5s;
+    // transition: all 0.8s cubic-bezier(0.55, 0, 0.1, 1) 0.15s;
+    font-family: 'Poppins', sans-serif;
+}
 .dashboard {
     display: flex;
     background-color: $dashBgColor;
     height: 100vh;
+}
+
+// graph and dashboard details
+.cardbg {
+    background-color: $dashMain; 
+    border-radius: 4px;
+    width: 100%;
+    display: flex;
+    margin: 8px 0;
+    padding: 15px;
+    transition: ease all 0.5s;
+    &__header {
+        padding: 10px 0;
+        h1 {
+            font-size: 1.4rem;
+            color: $white-color;
+            font-weight: 700;
+        }
+    }
+}
+.dashgraph {
+    height: auto;
+    &__header {
+        width: 100%;
+        padding: 0 20px;
+    }
+    &__progressdetails {
+        display: flex;
+        justify-content: space-between;
+        >div {
+            align-items: center;
+            h3 {
+                color: $white-color;
+                font-size: 1.2rem;
+                margin: 0;
+            }
+            h2 {
+                color: $white-color;
+                font-size: 1.8rem;
+                font-weight: 700;
+                margin: 0;
+            }
+            &:nth-child(3) {
+                h3 {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    &__range {
+        .ant-btn {
+            margin-left: 10px;
+            background-color: $black-color;
+            border-radius: 15px;
+            border-color: $black-color;
+            > span {
+                font-size: 14px;
+            }
+        }
+    }
 }
 
 // light style

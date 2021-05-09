@@ -5,6 +5,10 @@ export const LOGGER = (key, value) => {
   console.log(key, value);
 };
 
+export const ccyFormatter = num => {
+  return num.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1,');
+};
+
 export const useWOW = () => {
   const initWow = () => {
     const wow = new WOW.WOW({

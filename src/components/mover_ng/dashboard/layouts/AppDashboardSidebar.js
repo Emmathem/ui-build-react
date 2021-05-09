@@ -11,7 +11,7 @@ import {
   LibraryBooks,
   Receipt,
 } from '@material-ui/icons';
-import { LOGGER } from '../../../utils/miscelleous';
+import { LOGGER } from '../../../../utils/miscelleous';
 
 const AppDashboardSidebar = () => {
   const history = useHistory();
@@ -46,12 +46,12 @@ const AppDashboardSidebar = () => {
       <div className="sidebar__menu">
         <ul>
           <li>
-            <Link to="/">
+            <Link to="/movers-ng/dashboard">
               <Dashboard />
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/movers-ng/manage-users">
               <Person />
             </Link>
           </li>

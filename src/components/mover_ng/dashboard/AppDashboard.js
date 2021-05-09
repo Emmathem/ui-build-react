@@ -1,20 +1,22 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
-import AppDashboardHeader from './AppDashboardHeader';
-import AppDashboardSidebar from './AppDashboardSidebar';
+import { Row, Col } from 'antd';
 import { LOGGER } from '../../../utils/miscelleous';
+import AppDashboardGraph from './cards/AppDashboardGraph';
+import AppDashboardLayout from './layouts/AppDashboardLayout';
+import AppDashboardOrders from './cards/AppDashboardOrders';
 
 const AppDashboard = props => {
   LOGGER('p', props);
   return (
-    <div className="dashboard">
-      <Helmet>
-        <title>Dashboard | MoversNG</title>
-      </Helmet>
-      <AppDashboardHeader />
-      <AppDashboardSidebar />
-      <main>d</main>
-    </div>
+    <AppDashboardLayout pageTitle="Dashboard | MoversNG">
+      <AppDashboardGraph />
+      <Row gutter={[16, 16]}>
+        <Col span={16}>
+          <AppDashboardOrders />
+        </Col>
+        <Col span={8}>packages</Col>
+      </Row>
+    </AppDashboardLayout>
   );
 };
 

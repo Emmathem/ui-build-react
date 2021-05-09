@@ -14,6 +14,8 @@
     -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;900&display=swap" rel="stylesheet">
   <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -40,12 +42,28 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 </body>
-<!-- <script src="./wow.min.js"></script>
+<script src="./wow.min.js"></script>
 <script type="text/javascript">
   /**
    * Initalize wow js
    */
   var wow = new WOW({
+    boxClass: 'wow', // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset: 0, // distance to the element when triggering the animation (default is 0)
+    mobile: true, // trigger animations on mobile devices (default is true)
+    live: true, // act on asynchronously loaded content (default is true)
+    callback: function (box) {
+      // the callback is fired every time an animation is started the argument that is
+      // passed in is the DOM node being animated
+    },
+    scrollContainer: null // optional scroll container selector, otherwise use window
+  });
+  wow.init();
+</script>
+<!-- <script type="text/javascript">
+  const WOW = require('wowjs');
+  var wow = new WOW.WOW({
     boxClass: 'wow', // animated element css class (default is wow)
     animateClass: 'animated', // animation css class (default is animated)
     offset: 0, // distance to the element when triggering the animation (default is 0)

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Switch } from '@material-ui/core';
 import { Notifications } from '@material-ui/icons';
-import MoverLogo from '../../../assets/images/delivery-truck.png';
-import AppLogonUser from '../../shared/AppLogonUser';
+import MoverLogo from '../../../../assets/images/delivery-truck.png';
+import AppLogonUser from '../../../shared/AppLogonUser';
 
 const AppDashboardHeader = () => {
   const [state, setState] = useState({
